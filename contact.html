@@ -140,10 +140,11 @@
 
 .contact-cards-inline {
     display: flex;
-    gap: 25px;
+    gap: 35px;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 20px;
+    row-gap: 25px;
 }
 
     .contact-card-inline {
@@ -456,9 +457,9 @@ color: #ffffff;
            <li><a href="admissions.html">Admissions</a></li>
           <li><a href="courses.html">Courses</a></li>
           <li><a href="facilities.html" >Facilities</a></li>
-          <li><a href=#>Alumni</a></li>
+          <li><a href="alumni.html">Alumni</a></li>
           <li><a href="links.html">Links</a></li>
-          <li><a href="news.html" >Facilities</a></li>
+          <li><a href="news.html">News</a></li>
           <li><a href="infrastructure.html">Infrastructure</a></li>
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="research.html" >Research</a></li>
@@ -489,17 +490,17 @@ color: #ffffff;
                 <div class="contact-form-container" data-aos="fade-up" data-aos-delay="300">
                   <h3>Get in Touch</h3>
               <form action="forms/contact.php" method="post" class="php-email-form">
-                <div class="row">
+                <div class="row g-4">
                   <div class="col-md-6 form-group">
                     <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
                   </div>
-                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <div class="col-md-6 form-group">
                     <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
                   </div>
-                  <div class="form-group mt-3">
+                  <div class="col-12 form-group">
                   <input type="tel" class="form-control" name="mobile" id="mobile" placeholder="Mobile No" required="">
                 </div>
-                <div class="form-group mt-3">
+                <div class="col-12 form-group">
                   <textarea class="form-control" name="message" rows="5" placeholder="Message" required=""></textarea>
                 </div>
                 </div>
