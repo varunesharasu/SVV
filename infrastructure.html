@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Infrastructure - College Bootstrap Template</title>
+  <meta name="description" content="Explore our state-of-the-art infrastructure facilities at Shree Venkateshwara College of Physiotherapy">
+  <meta name="keywords" content="infrastructure, facilities, physiotherapy college, laboratories, gym, library">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Infrastructure Page CSS -->
+  <style>
+    /* Navigation Bar Hover Effects */
+    .navmenu ul li a {
+      position: relative;
+      transition: all 0.5s ease;
+    }
+
+    .navmenu ul li a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 5px;
+      left: 50%;
+      background: #04415f;
+      transition: all 0.5s ease;
+      transform: translateX(-50%);
+    }
+
+    .navmenu ul li a:hover {
+      color: #2086b8 !important;
+      
+    }
+
+    .navmenu ul li a:hover::after {
+      width: 80%;
+    }
+
+    .navmenu ul li.active a {
+      color: #04415f !important;
+    }
+
+    .navmenu ul li.active a::after {
+      width: 80%;
+      background: #04415f;
+    }
+
+    .navmenu .dropdown ul li a:hover {
+      background: linear-gradient(90deg, rgba(32, 134, 184, 0.1), rgba(4, 65, 95, 0.1));
+      color: #04415f !important;
+      padding-left: 25px;
+    }
+
+    /* Mobile Navigation Hover Effects */
+    @media (max-width: 1199px) {
+      .navmenu ul li a:hover {
+        background: linear-gradient(90deg, rgba(32, 134, 184, 0.1), rgba(4, 65, 95, 0.1));
+  
+      }
+    }
+    .facility-section {
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      border: 1px solid #e9ecef;
+    }
+
+    .facility-section h3 {
+      color: #011e2c;
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .facility-section p {
+      color: #010608;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    .facility-image-card {
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .facility-image-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .facility-image-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .facility-image-card img:hover {
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .facility-image-card p {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #04415f;
+      margin-bottom: 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .section-title h2 {
+      color: #011e2c;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+    .section-title h2::after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 3px;
+      background: #04415f;
+      margin: 15px auto 0;
+      border-radius: 2px;
+    }
+
+    .section-title p {
+      color: #010608;
+      font-size: 1.1rem;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 767px) {
+      .facility-section {
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      .facility-section h3 {
+        font-size: 1.5rem;
+      }
+
+      .facility-image-card img {
+        height: 150px;
+      }
+    }
+  </style>
+
+  <!-- =======================================================
+  * Template Name: College
+  * Template URL: https://bootstrapmade.com/college-bootstrap-education-template/
+  * Updated: Jun 19 2025 with Bootstrap v5.3.6
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+<style>
+
+.top-bar-wrapper {
+    width: 100%;
+    background-color: #07628f;
+}
+
+
+
+.header-admisson-btn {
+    display: flex;
+    flex: 1;
+}
+
+.social-links-2 {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.head-links {
+    margin-right: 10px;
+}
+
+
+/* --- Base Anchor/Button Styles --- */
+ 
+.adn-btn:hover {
+color: #ffffff;
+  transform: translateY(-2px); 
+
+}
+
+/* --- ON-CLICK Effect (The "Press") --- */
+.adn-btn:active {
+  /* Move the link back down slightly */
+  transform: translateY(-1px); 
+  
+  /* Smaller shadow for the pressed look */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+  
+
+/* Tablet specific styles */
+@media(min-width: 577px) and (max-width: 768px){
+    .header-admisson-btn {
+        flex-wrap: wrap;
+    }
+
+    .head-links {
+        margin: 0 5px 5px 0;
+    }
+
+    .adn-btn {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+}
+
+@media(max-width: 768px){
+    .top-bar-header {
+        display: flex;
+        flex-direction: column;
+        background-color: #07628f;
+        padding: 15px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .header-admisson-btn {
+  
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    .head-links {
+        margin: 0 0 10px 0;
+        width: 100%;
+                display: flex;
+        justify-content: center;
+    }
+
+    .social-links-2 {
+        margin: 10px 0 0 0;
+        align-self: flex-start;
+    }
+
+    .adn-btn {
+        color: #ffffff !important;
+        background-color: #04415f;
+        padding: 10px 15px;
+        border-radius: 50px;
+        margin: 0;
+        text-align: center;
+        font-size: 13px;
+        white-space: nowrap;
+        display: inline-block;
+        width: 70%;
+        max-width: 100%;
+    }
+    .centering-icons{
+      display: flex;
+      justify-content: center;
+    }
+}
+
+    .social-links-2{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0px 10px 10px;
+}
+
+</style>
+
+
+
+     <div class="top-bar-wrapper ">
+    <div class="container-fluid container-xl">
+        <div class="top-bar-header">
+        <div class="header-admisson-btn" >
+          <div class="head-links">
+              <a class="adn-btn" href="admissions.html"><i class="bi-book"> </i>  Admisson Open 2025 - 2026</a>
+          </div>
+        <div class="head-links">
+            <a class="adn-btn" href="tel:+91 9865147777"> <i class="bi-telephone-fill"> </i>    Admission Contact: 98651 47777</a>
+        </div>
+         <div class="head-links">
+              <a class="adn-btn"  href="http://121.200.50.180/next/web/eXdobEhHVE9mRXhsNGZMdTNKdHVRZj/hCMFNZZWpncVdQK0ZuOWJiTndCRT0">   <i class="bi bi-arrow-right-circle"> </i>  Online Payment</a>
+          </div>
+
+    </div>
+    <div class="centering-icons" style="margin-top: 6px;"> 
+      <div class="social-links-2">
+             <a  class="social-links-3"  href=""><i class="bi bi-twitter-x"></i></a>
+            <a class="social-links-3" href="https://www.facebook.com/people/Svcpscop-Svcpscop/pfbid02nfVP4a56Cpf5LmqiERoMRDQofsi7Wm2RR51t5fJjBngXSqF41u2JK6ZLCqtFhKRNl/?mibextid=rS40aB7S9Ucbxw6v"><i class="bi bi-facebook"></i></a>
+            <a class="social-links-3" href="https://www.instagram.com/svco_pt_ot_/?igsh=ZmdsbmQ5MnBrOXll#"><i class="bi bi-instagram"></i></a>
+           <a class="social-links-3"  href="https://www.youtube.com/@svcps"><i class="bi bi-youtube"></i></a>
+                </div>
+    </div>
+    
+    </div>
+    
+      </div>
+    </div>
+
+      <div class="sticky-top-1"> 
+  <header id="header" class="header d-flex align-items-center">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-end">
+
+      <div class="logo-section d-flex align-items-center me-auto">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <img src="assets/img/logo-fpng.png" alt="College logo">
+      </a>
+      <div class="college-name ms-3">
+        <h2 class="cg-name"> SHREE VENKATESHWARA</h2>
+        COLLEGE OF PARAMEDICAL SCIENCES<br>
+        COLLEGE OF PHYSIOTHERAPY<br>
+        <span class="affiliation">Affiliated to The Tamilnadu Dr.MGR Medical<br>
+        University, Chennai</span>
+      </div>
+    </div>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+
+          <li class="dropdown"><a href="#"><span>Academics</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="academicsProgrammes.html">Programmes</a></li>
+              <li><a href="clinicaltraining.html">Clinical Training</a></li>
+            </ul>
+          </li>
+           <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="facilities.html" >Facilities</a></li>
+          <li><a href=#>Alumni</a></li>
+          <li><a href="links.html">Links</a></li>
+          <li><a href="news.html">News</a></li>  
+          <li><a href="infrastructure.html" class="active">Infrastructure</a></li>
+          <li><a href="gallery.html" >Gallery</a></li>
+          <li><a href="research.html" >Research</a></li>
+          <li><a href="career.html" >Career</a></li>
+          <li><a href="contact.html" >Contact Us</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+
+  </div>
+
+  <main class="main">
+<style>
+  .infra-1{
+    background: linear-gradient(rgba(4, 65, 95, 0.8), rgba(4, 65, 95, 0.8)), url(assets/img/campus/1.jpg) center / cover;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+    background-attachment: fixed;
+  }
+</style>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section infra-1">
+      <div class="hero-wrapper">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-12 hero-content" data-aos="fade-right" data-aos-delay="100">
+              <h1 style="color: #ffffff;">Infrastructure</h1>
+              <p>State-of-the-art facilities designed to provide the best learning environment for our physiotherapy students.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Infrastructure Section -->
+    <section id="infrastructure" class="about section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Departments Section -->
+        <div class="row mb-5">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <h2>Departments</h2>
+              <p>Well-equipped departments providing comprehensive training facilities</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Classroom -->
+          <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+            <div class="facility-section">
+              <h3><i class="bi bi-house-door-fill text-primary me-2"></i>Class Room</h3>
+              <p>We have spacious well ventilated class rooms with AV aids</p>
+
+              <div class="row g-3 mt-3">
+                <div class="col-md-4">
+                  <div class="facility-image-card">
+                    <img src="assets/img/classrooms/CLASS-ROOM-scaled.jpg" alt="Classroom 1" class="img-fluid rounded">
+                    <p class="text-center mt-2 small text-muted">Spacious Classroom</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="facility-image-card">
+                    <img src="assets/img/classrooms/CLASSROOM-scaled2.jpg" alt="Classroom 2" class="img-fluid rounded">
+                    <p class="text-center mt-2 small text-muted">Modern AV Equipment</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="facility-image-card">
+                    <img src="assets/img/classrooms/Class-room-1-scaled22.jpg" alt="Classroom 3" class="img-fluid rounded">
+                    <p class="text-center mt-2 small text-muted">Interactive Learning</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Anatomy Physiology Lab -->
+          <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+            <div class="facility-section">
+              <h3><i class="bi bi-activity text-primary me-2"></i>Anatomy Physiology Lab</h3>
+              <p>We have natural anatomical specimen and bones which helps student for better input and learning. Additionally we provide AV aids for 3 dimensional anatomical images and a special software. Cadaver classes are arranged for better understanding.</p>
+
+              <div class="row g-3 mt-3">
+                <div class="col-md-4">
+                  <div class="facility-image-card">
+                    <img src="assets/img/Anatomy Physiology Lab/IMG-1.jpg" alt="Anatomy Lab 1" class="img-fluid rounded">
+                    <p class="text-center mt-2 small text-muted">Anatomical Specimens</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="facility-image-card">
+                    <img src="assets/img/Anatomy Physiology Lab/IMG-2.jpg" alt="Anatomy Lab 2" class="img-fluid rounded">
+                    <p class="text-center mt-2 small text-muted">3D Anatomy Software</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="facility-image-card">
+                    <img src="assets/img/Anatomy Physiology Lab/IMG-3.jpg" alt="Anatomy Lab 3" class="img-fluid rounded">
+                    <p class="text-center mt-2 small text-muted">Practical Training</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Exercise Therapy Department -->
+          <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+            <div class="facility-section">
+              <h3><i class="bi bi-heart-pulse-fill text-primary me-2"></i>Exercise Therapy Department</h3>
+              <p>Exercise therapy provides treatment plan with physical activities through gait training, Neuro re-education and therapeutic activities. Exercise regimen is designed and prescribed to assist patients recovering from diseases and conditions that interfere with their movements and daily activities or maintaining a state of well being.</p>
+              <p>Our department has got a well equipped exercise therapy lab where students are trained with physiotherapy regimen which helps to improve students ability to achieve the goal of exercise therapy to an optimal level by the end of the intervention. Different exercise techniques are demonstrated in the lab and students are encouraged to practice and gain confidence in performing various skills.</p>
+
+              <div class="row g-3 mt-3">
+                <div class="col-md-4">
+                  <div class="facility-image-card">
+                    <img src="assets/img/Exercise Therapy Department/img-1.jpg" alt="Exercise Therapy 1" class="img-fluid rounded">
+                    <p class="text-center mt-2 small text-muted">Therapeutic Exercises</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="facility-image-card">
+                    <img src="assets/img/Exercise Therapy Department/img-2.jpg" alt="Exercise Therapy 2" class="img-fluid rounded">
+                    <p class="text-center mt-2 small text-muted">Gait Training</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="facility-image-card">
+                    <img src="assets/img/Exercise Therapy Department/img-3.jpg" alt="Exercise Therapy 3" class="img-fluid rounded">
+                    <p class="text-center mt-2 small text-muted">Neuro Rehabilitation</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Massage Therapy -->
+          <div class="col-12" data-aos="fade-up" data-aos-delay="400">
+            <div class="facility-section">
+              <h3><i class="bi bi-hand-index-thumb text-primary me-2"></i>Massage Therapy</h3>
+              <p>We have well furnished, ventilated and spacious room for demonstration and massage therapy</p>
+
+              <div class="row g-3 mt-3">
+                <div class="col-md-4">
+                  <div class="facility-image-card">
+                    <img src="assets/img/Massage Therapy/IMG-1.jpg" alt="Massage Therapy 1" class="img-fluid rounded">
+                    <p class="text-center mt-2 small text-muted">Therapeutic Massage</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="facility-image-card">
+                    <img src="assets/img/Massage Therapy/Untitled.jpg" alt="Massage Therapy 2" class="img-fluid rounded">
+                    <p class="text-center mt-2 small text-muted">Training Room</p>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <!-- Walking School -->
+          <div class="col-12" data-aos="fade-up" data-aos-delay="500">
+            <div class="facility-section">
+              <h3><i class="bi bi-person-walking text-primary me-2"></i>Walking School</h3>
+              <p>Walking school provides a set of exercises which is specifically implemented to help patients to walk better. The school has body weight supported gait training aids and assistive devices which helps the student to rehabilitate the patient.</p>
+
+              <div class="row g-3 mt-3">
+                <div class="col-md-4">
+                  <div class="facility-image-card">
+                    <img src="assets/img/Walking School/IMG01.jpg" alt="Walking School 1" class="img-fluid rounded">
+                    <p class="text-center mt-2 small text-muted">Gait Training Aids</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="facility-image-card">
+                    <img src="assets/img/Walking School/IMG02.jpg" alt="Walking School 2" class="img-fluid rounded">
+                    <p class="text-center mt-2 small text-muted">Assistive Devices</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="facility-image-card">
+                    <img src="assets/img/Walking School/IMG03.jpg" alt="Walking School 3" class="img-fluid rounded">
+                    <p class="text-center mt-2 small text-muted">Rehabilitation Training</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Electrotherapy Department -->
+          <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+            <div class="facility-section">
+              <h3><i class="bi bi-lightning-charge-fill text-primary me-2"></i>Electrotherapy Department</h3>
+              <p>A well equipped, spacious and ventilated lab with advanced electrotherapy modalities, which helps the students to learn the advancements in the field of physiotherapy.</p>
+
+              <div class="row g-3 mt-3">
+                <div class="col-md-4">
+                  <div class="facility-image-card">
+                    <img src="assets/img/Electrotherapy Department/Untitled1.jpg" alt="Electrotherapy 1" class="img-fluid rounded">
+                    <p class="text-center mt-2 small text-muted">Advanced Modalities</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="facility-image-card">
+                    <img src="assets/img/Electrotherapy Department/Untitled2.jpg" alt="Electrotherapy 2" class="img-fluid rounded">
+                    <p class="text-center mt-2 small text-muted">Modern Equipment</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="facility-image-card">
+                    <img src="assets/img/Electrotherapy Department/Untitled3.jpg" alt="Electrotherapy 3" class="img-fluid rounded">
+                    <p class="text-center mt-2 small text-muted">Student Training</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- OPD -->
+          <div class="col-12" data-aos="fade-up" data-aos-delay="700">
+            <div class="facility-section">
+              <h3><i class="bi bi-hospital text-primary me-2"></i>OPD</h3>
+              <p>A neatly designed outpatient department with highly equipped advanced modalities with an extensive ambiance. Our students are exposed to different variety of patients in the departments of neurology, orthopaedics, paediatrics and sports physiotherapy. We provide advanced treatment with well trained physiotherapist at free of cost.</p>
+
+              <div class="row g-3 mt-3">
+                <div class="col-md-4">
+                  <div class="facility-image-card">
+                    <img src="assets/img/OPD/1.jpg" alt="OPD 1" class="img-fluid rounded">
+                    <p class="text-center mt-2 small text-muted">Patient Consultation</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="facility-image-card">
+                    <img src="assets/img/OPD/2.jpg" alt="OPD 2" class="img-fluid rounded">
+                    <p class="text-center mt-2 small text-muted">Treatment Area</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="facility-image-card">
+                    <img src="assets/img/OPD/3.jpg" alt="OPD 3" class="img-fluid rounded">
+                    <p class="text-center mt-2 small text-muted">Clinical Training</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gymnasium Section -->
+        <div class="row mt-5">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <h2>Gymnasium</h2>
+              <p>Modern fitness facilities for comprehensive training</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+            <div class="facility-section">
+              <h3><i class="bi bi-trophy-fill text-primary me-2"></i>Gym</h3>
+              <p>Our gym is one among the well equipped gymnasiums, which provide a good exposure to students for the strength training which is an adjunct to the treatment. It provides a facility to promote physical activity, functional, comfortable and pleasant environment that creates an enjoyable atmosphere for recreation</p>
+
+              <div class="row g-3 mt-3">
+                <div class="col-md-4">
+                  <div class="facility-image-card">
+                    <img src="assets/img/gym/1.jpg" alt="Gym 1" class="img-fluid rounded">
+                    <p class="text-center mt-2 small text-muted">Strength Training</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="facility-image-card">
+                    <img src="assets/img/gym/2.jpg" alt="Gym 2" class="img-fluid rounded">
+                    <p class="text-center mt-2 small text-muted">Modern Equipment</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="facility-image-card">
+                    <img src="assets/img/gym/3.jpg" alt="Gym 3" class="img-fluid rounded">
+                    <p class="text-center mt-2 small text-muted">Fitness Training</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Library Section -->
+        <div class="row mt-5">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <h2>Library</h2>
+              <p>Extensive collection of academic resources</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+            <div class="facility-section">
+              <h3><i class="bi bi-book-fill text-primary me-2"></i>Library</h3>
+              <p>The library has a collection of more than 4000 books, Internet facilities are available for the students in the college and library. The library regularly subscribes National and International journals in Physiotherapy.</p>
+
+              <div class="row g-3 mt-3">
+                <div class="col-md-4">
+                  <div class="facility-image-card">
+                    <img src="assets/img/library/1.jpg" alt="Library 1" class="img-fluid rounded">
+                    <p class="text-center mt-2 small text-muted">Reading Hall</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="facility-image-card">
+                    <img src="assets/img/library/2.jpg" alt="Library 2" class="img-fluid rounded">
+                    <p class="text-center mt-2 small text-muted">Book Collection</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="facility-image-card">
+                    <img src="assets/img/library/3.jpg" alt="Library 3" class="img-fluid rounded">
+                    <p class="text-center mt-2 small text-muted">Study Area</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Computer Lab Section -->
+        <div class="row mt-5">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <h2>Computer Lab</h2>
+              <p>Advanced computing facilities for modern education</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+            <div class="facility-section">
+              <h3><i class="bi bi-pc-display text-primary me-2"></i>Computer Lab</h3>
+              <p>The college has high-tech advanced computers with LAN and internet services through wireless connectivity, and LCD projection systems, hardware and software, digital cameras, printers, scanners, plotters, photocopying machine and video cameras etc.</p>
+
+              <div class="row g-3 mt-3">
+                <div class="col-md-4">
+                  <div class="facility-image-card">
+                    <img src="assets/img/coumpterlab/1.png" alt="Computer Lab 1" class="img-fluid rounded">
+                    <p class="text-center mt-2 small text-muted">Computer Lab</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="facility-image-card">
+                    <img src="assets/img/coumpterlab/2.jpg" alt="Computer Lab 2" class="img-fluid rounded">
+                    <p class="text-center mt-2 small text-muted">Advanced Systems</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="facility-image-card">
+                    <img src="assets/img/coumpterlab/3.jpg" alt="Computer Lab 3" class="img-fluid rounded">
+                    <p class="text-center mt-2 small text-muted">Digital Learning</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-3 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+          <img class="img-logo-footer" src="assets/img/logo-fpng.png" alt="College logo">
+          </a>
+            <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/people/Svcpscop-Svcpscop/pfbid02nfVP4a56Cpf5LmqiERoMRDQofsi7Wm2RR51t5fJjBngXSqF41u2JK6ZLCqtFhKRNl/?mibextid=rS40aB7S9Ucbxw6v"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/svco_pt_ot_/?igsh=ZmdsbmQ5MnBrOXll#"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/@svcps"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>QUICK LINKS</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html" style="font-weight: 600;">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>OUR FACILITIES</h4>
+          <ul>
+            <li><a href="#">Hostel</a></li>
+            <li><a href="#">Cafeteria</a></li>
+            <li><a href="#">Laboratory</a></li>
+            <li><a href="#">Libraries</a></li>
+            <li><a href="#">Transport</a></li>
+            <li><a href="#">Research Centre</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-about">
+           <h4>COLLEGE ADDRESS</h4>
+          <div class="footer-contact">
+            <p>Sri Kalaivani Nagar, Otthakkuthirai,</p>
+            <p>K.Mettupalayam (PO) - 638 455</p>
+            <p>Gobichettipalayam, Erode Dt, Tamil Nadu.</p>
+            <p class="mt-33" ><strong>Phone:</strong> <a href="tel:+91 9003686322">+91 9003686322</a></p>
+               <p class="mt-33"><strong>Phone:</strong> <a href="tel:+91 8122889988">+91 8122889988</a></p>
+            <p class="mt-33"><strong>Email:</strong> <a href="mailto:svcpsphysio@gmail.com">svcpsphysio@gmail.com</a></p>
+            <p class="mt-33"><strong>Email:</strong> <a href="mailto:physioedu@svcps.in">physioedu@svcps.in</a></p>
+            <p class="mt-33"><strong>Website:</strong>  <a href="www.svcps.in">www.svcps.in</a></p>
+          </div>
+          <style>
+            .mt-33{
+              font-family:Arial, Helvetica, sans-serif !important;
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright text-center mt-4">
+      <p>© 2024 <a href="https://diginexus.co.in" target="_blank" style="color: inherit; text-decoration: none;">Digi Nexus</a>. All rights reserved.</p>
+
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
