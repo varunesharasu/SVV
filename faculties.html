@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Faculties - Shree Venkateshwara College of Physiotherapy</title>
+  <meta name="description" content="Meet our distinguished faculty members at Shree Venkateshwara College of Physiotherapy">
+  <meta name="keywords" content="faculty, professors, physiotherapy faculty, teaching staff">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Faculties Page CSS -->
+  <style>
+    /* Navigation Bar Hover Effects */
+    .navmenu ul li a {
+      position: relative;
+      transition: all 0.5s ease;
+    }
+
+    .navmenu ul li a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 5px;
+      left: 50%;
+      background: #04415f;
+      transition: all 0.5s ease;
+      transform: translateX(-50%);
+    }
+
+    .navmenu ul li a:hover {
+      color: #2086b8 !important;
+    }
+
+    .navmenu ul li a:hover::after {
+      width: 80%;
+    }
+
+    .navmenu ul li.active a {
+      color: #04415f !important;
+    }
+
+    .navmenu ul li.active a::after {
+      width: 80%;
+      background: #04415f;
+    }
+
+    .navmenu .dropdown ul li a:hover {
+      background: linear-gradient(90deg, rgba(32, 134, 184, 0.1), rgba(4, 65, 95, 0.1));
+      color: #04415f !important;
+      padding-left: 25px;
+    }
+
+    /* Mobile Navigation Hover Effects */
+    @media (max-width: 1199px) {
+      .navmenu ul li a:hover {
+        background: linear-gradient(90deg, rgba(32, 134, 184, 0.1), rgba(4, 65, 95, 0.1));
+      }
+    }
+
+    /* Hero Section */
+    .faculty-hero {
+      background: linear-gradient(135deg, #2086b8, #04415f);
+      color: white;
+      padding: 100px 0 60px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .faculty-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('assets/img/campus/1.jpg') center/cover;
+      opacity: 0.15;
+    }
+
+    .faculty-hero .content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .faculty-hero h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+
+    .faculty-hero p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    @media (max-width: 768px) {
+      .faculty-hero h1 {
+        font-size: 2rem;
+      }
+      .faculty-hero p {
+        font-size: 1rem;
+      }
+    }
+
+    /* Faculty Section */
+    .faculty-section {
+      padding: 80px 0;
+      background-color: #f8f9fa;
+    }
+
+    .faculty-section .section-title {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .faculty-section .section-title h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #04415f;
+      margin-bottom: 15px;
+    }
+
+    .faculty-section .section-title p {
+      font-size: 1.1rem;
+      color: #6c757d;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .faculty-card {
+      background: #fff;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+      height: 90%;
+      margin-bottom: 30px;
+      width: 80%;
+    }
+
+    .faculty-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    }
+
+    .faculty-card .faculty-image {
+      position: relative;
+      overflow: hidden;
+      height: 250px;
+      background: linear-gradient(135deg, #2086b8, #04415f);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .faculty-card .faculty-image i {
+      font-size: 5rem;
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    .faculty-card .faculty-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .faculty-card:hover .faculty-image img {
+      transform: scale(1.1);
+    }
+
+    .faculty-card .faculty-info {
+      padding: 25px;
+      text-align: center;
+    }
+
+    .faculty-card .faculty-info h3 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #04415f;
+      margin-bottom: 5px;
+    }
+
+    .faculty-card .faculty-info .designation {
+      font-size: 1rem;
+      color: #2086b8;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .faculty-card .faculty-info .department {
+      font-size: 0.9rem;
+      color: #6c757d;
+      margin-bottom: 15px;
+    }
+
+    .faculty-card .faculty-info .qualification {
+      font-size: 0.9rem;
+      color: #495057;
+      margin-bottom: 15px;
+      font-style: italic;
+    }
+
+    .faculty-card .faculty-info .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .faculty-card .faculty-info .social-links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #f8f9fa;
+      color: #04415f;
+      transition: all 0.3s ease;
+    }
+
+    .faculty-card .faculty-info .social-links a:hover {
+      background: #2086b8;
+      color: #fff;
+    }
+
+    @media (max-width: 991px) {
+      .faculty-card .faculty-image {
+        height: 250px;
+      }
+    }
+    @media (max-width: 768px) {
+    .top-bar-header {
+        display: flex;
+        flex-direction: column;
+        background-color: #07628f;
+        padding: 15px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-admisson-btn {
+      display: flex;
+      flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+}
+.adn-btn:hover{
+  color: #fff;
+  transform: translateY(-2px);
+}
+  </style>
+</head>
+
+<body class="faculties-page">
+
+  <!-- Top Bar -->
+
+     <div class="top-bar-wrapper ">
+        <div class="container-fluid container-xl">
+            <div class="top-bar-header">
+              <div class="header-admisson-btn" >
+                  <div class="head-links">
+                    <a class="adn-btn" href="admissions.html"><i class="bi-book"> </i>  Admisson Open 2025 - 2026</a>
+                  </div>
+                  <div class="head-links">
+                    <a class="adn-btn" href="tel:+91 9865147777"> <i class="bi-telephone-fill"> </i>    Admission Contact: 98651 47777</a>
+                  </div>
+                  <div class="head-links">
+                     <a class="adn-btn"  href="http://121.200.50.180/next/web/eXdobEhHVE9mRXhsNGZMdTNKdHVRZj/hCMFNZZWpncVdQK0ZuOWJiTndCRT0">   <i class="bi bi-arrow-right-circle"> </i>  Online Payment</a>
+                  </div>
+                </div>
+                <div class="centering-icons" style="margin-top: 6px;">
+                  <div class="social-links-2">
+                      <a class="social-links-3" href=""><i class="bi bi-twitter-x"></i></a>
+                      <a class="social-links-3" href="https://www.facebook.com/people/Svcpscop-Svcpscop/pfbid02nfVP4a56Cpf5LmqiERoMRDQofsi7Wm2RR51t5fJjBngXSqF41u2JK6ZLCqtFhKRNl/?mibextid=rS40aB7S9Ucbxw6v"><i class="bi bi-facebook"></i></a>
+                      <a class="social-links-3" href="https://www.instagram.com/svco_pt_ot_/?igsh=ZmdsbmQ5MnBrOXll#"><i class="bi bi-instagram"></i></a>
+                      <a class="social-links-3" href="https://www.youtube.com/@svcps"><i class="bi bi-youtube"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  <!-- Header -->
+  <div class="sticky-top-1">
+    <header id="header" class="header d-flex align-items-center">
+      <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-end">
+
+        <div class="logo-section d-flex align-items-center me-auto">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <img src="assets/img/logo-fpng.png" alt="College logo">
+          </a>
+          <div class="college-name ms-3">
+            <h2 class="cg-name">SHREE VENKATESHWARA</h2>
+            COLLEGE OF PARAMEDICAL SCIENCES<br>
+            COLLEGE OF PHYSIOTHERAPY<br>
+            <span class="affiliation">Affiliated to The Tamilnadu Dr.MGR Medical<br>
+            University, Chennai</span>
+          </div>
+        </div>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown"><a href="#"><span>Academics</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="academicsProgrammes.html">Programmes</a></li>
+                <li><a href="clinicaltraining.html">Clinical Training</a></li>
+              </ul>
+            </li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="#">Alumni</a></li>
+            <li><a href="links.html">Links</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="infrastructure.html">Infrastructure</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+      </div>
+    </header>
+  </div>
+
+  <main class="main">
+
+    <!-- Faculty Hero Section -->
+    <section class="faculty-hero section">
+      <div class="container">
+        <div class="content text-center" data-aos="fade-up">
+          <h1 style="color: #fff;">Our Distinguished Faculty</h1>
+          <p>Meet our team of experienced educators and healthcare professionals dedicated to excellence in physiotherapy education</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Faculty Section -->
+    <section class="faculty-section section">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Meet Our Faculty Members</h2>
+          <p>Our faculty comprises highly qualified professionals with extensive experience in physiotherapy practice, research, and education</p>
+        </div>
+
+        <div class="row">
+          <!-- Faculty 1 -->
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="faculty-card">
+              <div class="faculty-image">
+                <i class="bi bi-person-fill"></i>
+              </div>
+              <div class="faculty-info">
+                <h3>Dr. Rajesh Kumar</h3>
+                <p class="designation">Professor & HOD</p>
+                <p class="department">Department of Musculoskeletal Physiotherapy</p>
+                <p class="qualification">MPTh, PhD</p>
+                 
+              </div>
+            </div>
+          </div>
+
+          <!-- Faculty 2 -->
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="faculty-card">
+              <div class="faculty-image">
+                <i class="bi bi-person-fill"></i>
+              </div>
+              <div class="faculty-info">
+                <h3>Dr. Priya Sharma</h3>
+                <p class="designation">Associate Professor</p>
+                <p class="department">Department of Neurological Physiotherapy</p>
+                <p class="qualification">MPTh, PhD</p>
+                 
+              </div>
+            </div>
+          </div>
+
+          <!-- Faculty 3 -->
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="faculty-card">
+              <div class="faculty-image">
+                <i class="bi bi-person-fill"></i>
+              </div>
+              <div class="faculty-info">
+                <h3>Dr. Anand Patel</h3>
+                <p class="designation">Professor</p>
+                <p class="department">Department of Cardiovascular Physiotherapy</p>
+                <p class="qualification">BPTh, MPTh, PhD</p>
+                 
+              </div>
+            </div>
+          </div>
+
+          <!-- Faculty 4 -->
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="faculty-card">
+              <div class="faculty-image">
+                <i class="bi bi-person-fill"></i>
+              </div>
+              <div class="faculty-info">
+                <h3>Dr. Meena Narayanan</h3>
+                <p class="designation">Associate Professor</p>
+                <p class="department">Department of Pediatric Physiotherapy</p>
+                <p class="qualification">MPTh, PhD</p>
+                 
+              </div>
+            </div>
+          </div>
+
+          <!-- Faculty 5 -->
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="faculty-card">
+              <div class="faculty-image">
+                <i class="bi bi-person-fill"></i>
+              </div>
+              <div class="faculty-info">
+                <h3>Dr. Karthik Rajan</h3>
+                <p class="designation">Assistant Professor</p>
+                <p class="department">Department of Sports Physiotherapy</p>
+                <p class="qualification">BPTh, MPTh</p>
+                 
+              </div>
+            </div>
+          </div>
+
+          <!-- Faculty 6 -->
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="faculty-card">
+              <div class="faculty-image">
+                <i class="bi bi-person-fill"></i>
+              </div>
+              <div class="faculty-info">
+                <h3>Dr. Sunita Agarwal</h3>
+                <p class="designation">Professor</p>
+                <p class="department">Department of Community Physiotherapy</p>
+                <p class="qualification">BPTh, MPTh, PhD</p>
+                 
+              </div>
+            </div>
+          </div>
+
+          <!-- Faculty 7 -->
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="700">
+            <div class="faculty-card">
+              <div class="faculty-image">
+                <i class="bi bi-person-fill"></i>
+              </div>
+              <div class="faculty-info">
+                <h3>Dr. Vikram Singh</h3>
+                <p class="designation">Associate Professor</p>
+                <p class="department">Department of Electrotherapy</p>
+                <p class="qualification">MPTh, MSc Electrotherapy</p>
+                 
+              </div>
+            </div>
+          </div>
+
+          <!-- Faculty 8 -->
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="800">
+            <div class="faculty-card">
+              <div class="faculty-image">
+                <i class="bi bi-person-fill"></i>
+              </div>
+              <div class="faculty-info">
+                <h3>Dr. Kavitha Krishnan</h3>
+                <p class="designation">Assistant Professor</p>
+                <p class="department">Department of Exercise Therapy</p>
+                <p class="qualification">BPTh, MPTh</p>
+                 
+              </div>
+            </div>
+          </div>
+
+          <!-- Faculty 9 -->
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="900">
+            <div class="faculty-card">
+              <div class="faculty-image">
+                <i class="bi bi-person-fill"></i>
+              </div>
+              <div class="faculty-info">
+                <h3>Dr. Deepak Verma</h3>
+                <p class="designation">Professor</p>
+                <p class="department">Department of Anatomy & Physiology</p>
+                <p class="qualification">MBBS, MD Physiology</p>
+                 
+              </div>
+            </div>
+          </div>
+
+          <!-- Faculty 10 -->
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="1000">
+            <div class="faculty-card">
+              <div class="faculty-image">
+                <i class="bi bi-person-fill"></i>
+              </div>
+              <div class="faculty-info">
+                <h3>Dr. Anitha Ramachandran</h3>
+                <p class="designation">Associate Professor</p>
+                <p class="department">Department of Biomechanics</p>
+                <p class="qualification">BPTh, MPTh, PhD</p>
+                 
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-3 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <img class="img-logo-footer" src="assets/img/logo-fpng.png" alt="College logo">
+          </a>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/people/Svcpscop-Svcpscop/pfbid02nfVP4a56Cpf5LmqiERoMRDQofsi7Wm2RR51t5fJjBngXSqF41u2JK6ZLCqtFhKRNl/?mibextid=rS40aB7S9Ucbxw6v"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/svco_pt_ot_/?igsh=ZmdsbmQ5MnBrOXll#"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/@svcps"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>QUICK LINKS</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html" style="font-weight: 600;">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>OUR FACILITIES</h4>
+          <ul>
+            <li><a href="#">Hostel</a></li>
+            <li><a href="#">Cafeteria</a></li>
+            <li><a href="#">Laboratory</a></li>
+            <li><a href="#">Libraries</a></li>
+            <li><a href="#">Transport</a></li>
+            <li><a href="#">Research Centre</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-about">
+          <h4>COLLEGE ADDRESS</h4>
+          <div class="footer-contact">
+            <p>Sri Kalaivani Nagar, Otthakkuthirai,</p>
+            <p>K.Mettupalayam (PO) - 638 455</p>
+            <p>Gobichettipalayam, Erode Dt, Tamil Nadu.</p>
+            <p class="mt-33"><strong>Phone:</strong> <a href="tel:+91 9003686322">+91 9003686322</a></p>
+            <p class="mt-33"><strong>Phone:</strong> <a href="tel:+91 8122889988">+91 8122889988</a></p>
+            <p class="mt-33"><strong>Email:</strong> <a href="mailto:svcpsphysio@gmail.com">svcpsphysio@gmail.com</a></p>
+            <p class="mt-33"><strong>Email:</strong> <a href="mailto:physioedu@svcps.in">physioedu@svcps.in</a></p>
+            <p class="mt-33"><strong>Website:</strong> <a href="www.svcps.in">www.svcps.in</a></p>
+          </div>
+          <style>
+            .mt-33 {
+              font-family: Arial, Helvetica, sans-serif !important;
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright text-center mt-4">
+      <p>© 2024 <a href="https://diginexus.co.in" target="_blank" style="color: inherit; text-decoration: none;">Digi Nexus</a>. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

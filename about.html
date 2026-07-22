@@ -1,0 +1,1689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>About - Shree Venkateshwara College of Physiotherapy</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: College
+  * Template URL: https://bootstrapmade.com/college-bootstrap-education-template/
+  * Updated: Jun 19 2025 with Bootstrap v5.3.6
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+  <!-- About Page Modern CSS -->
+  <style>
+
+  /* Navigation Bar Hover Effects */
+    .navmenu ul li a {
+      position: relative;
+      transition: all 0.5s ease;
+    }
+
+    .navmenu ul li a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 5px;
+      left: 50%;
+      background: #04415f;
+      transition: all 0.5s ease;
+      transform: translateX(-50%);
+    }
+
+    .navmenu ul li a:hover {
+      color: #2086b8 !important;
+    }
+
+    .navmenu ul li a:hover::after {
+      width: 80%;
+    }
+
+    .navmenu ul li.active a {
+      color: #04415f !important;
+    }
+
+    .navmenu ul li.active a::after {
+      width: 80%;
+      background: #04415f;
+    }
+
+    .navmenu .dropdown ul li a:hover {
+      background: linear-gradient(90deg, rgba(32, 134, 184, 0.1), rgba(4, 65, 95, 0.1));
+      color: #04415f !important;
+      padding-left: 25px;
+    }
+
+    /* Mobile Navigation Hover Effects */
+    
+    /* Hero Section */
+    .about-hero {
+      background: linear-gradient(135deg, #2086b8, #04415f);
+      color: white;
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('assets/img/campus/1.jpg') center/cover;
+      opacity: 0.1;
+      z-index: 0;
+    }
+
+    .about-hero .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .about-hero h2 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    .about-hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+      opacity: 0.95;
+      text-align: center;
+    }
+
+    /* Institution Info Section */
+
+    .about-box-ig{
+      width: 100% !important;
+    }
+    .institution-info {
+      padding: 20px 0;
+      background: #f8f9fa;
+    }
+
+    .info-card {
+      background: white;
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      border-left: 5px solid #2086b8;
+      margin-bottom: 30px;
+      transition: all 0.3s ease;
+      width:100% !important;
+    }
+
+    .info-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+      border-left-color: #04415f;
+    }
+
+    .info-card h3 {
+      color: #04415f;
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .info-card h3 i {
+      font-size: 1.5rem;
+      color: #2086b8;
+    }
+
+    .info-card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .info-card ul li {
+      padding: 8px 0;
+      padding-left: 25px;
+      position: relative;
+      color: #495057;
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    .info-card ul li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: #2086b8;
+      font-weight: bold;
+    }
+
+    /* Horizontal Tabs Styles */
+    .horizontal-tabs {
+      margin: 0;
+    }
+
+    .tab-navigation {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      padding: 10px;
+      margin-bottom: 30px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .custom-nav-tabs {
+      border: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .custom-nav-tabs .nav-item {
+      margin-bottom: 0;
+     
+
+    }
+
+    .custom-nav-tabs .nav-link {
+      background:  #04415f;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 15px 20px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-align: center;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(32, 134, 184, 0.3);
+      display: flex;
+      align-items: center;
+      /* justify-content: center; */
+      gap: 12px;
+      min-width: 240px;
+    }
+
+
+    .custom-nav-tabs .nav-link i {
+      font-size: 1.9rem;
+    }
+
+    .custom-nav-tabs .nav-link:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(32, 134, 184, 0.4);
+      background: linear-gradient(135deg, #2086b8, #04415f);
+    }
+
+    .custom-nav-tabs .nav-link.active {
+      background: linear-gradient(135deg, #2086b8, #04415f);
+      color: white;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(32, 134, 184, 0.4);
+    }
+
+    .custom-nav-tabs .nav-link::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 70%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .custom-nav-tabs .nav-link:hover::before,
+    .custom-nav-tabs .nav-link.active::before {
+      opacity: 1;
+    }
+
+    .tab-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .tab-pane {
+      background: white;
+      border-radius: 15px;
+      padding: 0;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      min-height: 400px;
+    }
+
+    .tab-content-inner {
+      padding: 40px;
+    }
+
+    /* Tab content animations */
+    .tab-pane {
+      opacity: 0;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .tab-pane.show.active {
+      opacity: 1;
+    }
+
+    .tab-pane.fade {
+      opacity: 0;
+    }
+
+    .tab-pane.fade.show {
+      opacity: 1;
+    }
+
+    /* Feature List for Accordion */
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .feature-list li {
+      padding: 6px 0;
+      border-bottom: 1px solid rgba(32, 134, 184, 0.1);
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      transition: all 0.3s ease;
+      color: #34495e;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    .feature-list li:last-child {
+      border-bottom: none;
+    }
+
+    .feature-list li:hover {
+      padding-left: 10px;
+      background: rgba(32, 134, 184, 0.03);
+      margin: 0 -10px;
+      padding-right: 10px;
+      border-radius: 8px;
+    }
+
+    .feature-list i {
+      color: #2086b8;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* Approval Items for Accordion */
+    .approval-item {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+      border-left: 4px solid #2086b8;
+      margin-bottom: 15px;
+      transition: all 0.3s ease;
+    }
+
+    .approval-item:hover {
+      transform: translateX(5px);
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    .approval-item h4 {
+      color: #04415f;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .approval-item h4 i {
+      color: #2086b8;
+      font-size: 1.1rem;
+    }
+
+    .approval-item p {
+      color: #495057;
+      line-height: 1.5;
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    /* Message Content Styles */
+    .message-header h4 {
+      color: #04415f;
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .message-header .text-muted {
+      color: #6c757d !important;
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+
+    .message-text p {
+      color: #495057;
+      line-height: 1.7;
+      margin-bottom: 15px;
+      font-size: 1.05rem;
+    }
+
+    .blockquote {
+      border-color: #2086b8 !important;
+      background: rgba(32, 134, 184, 0.05);
+      padding: 15px 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+
+    .blockquote p {
+      color: #495057 !important;
+      margin: 0;
+      font-style: italic;
+    }
+
+    /* Image Styles for Accordion */
+    .info-image {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .info-image img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .info-image img:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+
+    /* Leadership Message Headers Background Colors */
+    .message-header.chairman-header {
+      background: linear-gradient(135deg, #2086b8, #04415f);
+      color: white;
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 30px;
+    }
+
+    .message-header.chairman-header h4,
+    .message-header.chairman-header p {
+      color: white !important;
+    }
+
+    .message-header.secretary-header {
+      background: linear-gradient(135deg, #2086b8, #04415f);
+      color: white;
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 30px;
+    }
+
+    .message-header.secretary-header h4,
+    .message-header.secretary-header p {
+      color: white !important;
+    }
+
+    .message-header.principal-header {
+      background: linear-gradient(135deg, #2086b8, #04415f);
+      color: white;
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 30px;
+    }
+
+    .message-header.principal-header h4,
+    .message-header.principal-header p {
+      color: white !important;
+    }
+
+    /* Ensure full section visibility when scrolled */
+    .message-card {
+      margin-top: 30px;
+      padding-top: 20px;
+    }
+
+    /* Secretary Message - Left Image Layout */
+    .message-card.secretary-layout {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      transition: all 0.4s ease;
+      margin-bottom: 30px;
+    }
+
+    .message-card.secretary-layout:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Responsive adjustments for Horizontal Tabs */
+    @media (max-width: 992px) {
+      .custom-nav-tabs {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .custom-nav-tabs .nav-item {
+        min-width: 100%;
+        flex: none;
+      }
+
+      .custom-nav-tabs .nav-link {
+        padding: 12px 15px;
+        font-size: 0.95rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .custom-nav-tabs .nav-link {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+        min-height: auto;
+        width: 100%;
+      }
+
+      .tab-content-inner {
+        padding: 25px;
+      }
+
+      .feature-list li {
+        font-size: 1rem;
+      }
+
+      .info-image {
+        margin-top: 25px;
+      }
+
+      .info-image img {
+        max-height: 250px;
+        object-fit: cover;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .custom-nav-tabs .nav-link i {
+        font-size: 1rem;
+      }
+
+      .custom-nav-tabs .nav-link span {
+        display: none;
+      }
+
+      .custom-nav-tabs .nav-link {
+        padding: 12px;
+        justify-content: center;
+        min-width: 100%;
+      }
+
+      .tab-content-inner {
+        padding: 20px;
+      }
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .section-title h2 {
+      color: #04415f;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+    .section-title h2::after {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 4px;
+      background: linear-gradient(90deg, #2086b8, #04415f);
+      margin: 15px auto 0;
+      border-radius: 2px;
+    }
+
+    .section-title p {
+      color: #6c757d;
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .message-card {
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      border-top: 4px solid #2086b8;
+      margin-bottom: 30px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      width:100% !important;
+    }
+
+    .message-card::before {
+      content: '"';
+      position: absolute;
+      top: -20px;
+      right: 20px;
+      font-size: 120px;
+      color: rgba(32, 134, 184, 0.1);
+      font-family: Georgia, serif;
+    }
+
+    .message-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+      border-top-color: #04415f;
+    }
+
+    .message-header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .message-avatar {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #2086b8, #04415f);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+
+    .message-info h4 {
+      color: #04415f;
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .message-info p {
+      color: #2086b8;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    .message-quote {
+      color: #495057;
+      font-style: italic;
+      margin-bottom: 15px;
+      padding-left: 15px;
+      border-left: 3px solid #2086b8;
+    }
+
+    .message-content {
+      color: #495057;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .message-content ul {
+      padding-left: 20px;
+      margin-top: 15px;
+    }
+
+    .message-content ul li {
+      margin-bottom: 8px;
+      color: #495057;
+    }
+
+    /* Stats Section */
+    .stats-section {
+      padding: 60px 0;
+      background: #2086b8;
+      color: white;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .stat-card {
+      text-align: center;
+      padding: 30px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+    }
+
+    .stat-card:hover {
+      background: rgba(255,255,255,0.2);
+      transform: translateY(-5px);
+    }
+
+    .stat-number {
+      font-size: 3rem;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .stat-label {
+      font-size: 1.1rem;
+      opacity: 0.95;
+    }
+
+    /* Footer CSS Overrides */
+    .footer .footer-top .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+      align-items: flex-start;
+    }
+
+    /* Force 4-column layout for footer */
+    .footer .footer-top .col-lg-3 {
+      flex: 0 0 25% !important;
+      max-width: 25% !important;
+      padding-right: 15px;
+      padding-left: 15px;
+      position: relative;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    /* Prevent footer columns from wrapping */
+    @media (min-width: 1200px) {
+      .footer .footer-top .row {
+        flex-wrap: nowrap;
+      }
+
+      .footer .footer-top .col-lg-3 {
+        flex: 0 0 25% !important;
+        max-width: 25% !important;
+      }
+    }
+
+    /* Tablet responsive - still try to keep 4 columns if possible */
+    @media (max-width: 1199px) and (min-width: 768px) {
+      .footer .footer-top .col-lg-3 {
+        flex: 0 0 25% !important;
+        max-width: 25% !important;
+      }
+    }
+
+    /* Mobile - stack vertically */
+    @media (max-width: 767px) {
+      .footer .footer-top .col-lg-3 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        margin-bottom: 30px;
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .about-hero h2 {
+        font-size: 2rem;
+      }
+
+      .about-hero p {
+        font-size: 1rem;
+      }
+
+      .section-title h2 {
+        font-size: 2rem;
+      }
+
+      .info-card,
+      .message-card {
+        padding: 25px;
+      }
+
+      .message-header p{
+        flex-direction: column;
+        
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .about-hero {
+        padding: 60px 0;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stat-number {
+        font-size: 2.5rem;
+      }
+    }
+
+    /*certi-link*/
+   .certi-link:hover{
+    color: blue;
+   }
+   
+    /* Image Styles for Split Layout */
+    .info-image {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .info-image img,
+    .message-image img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .info-image img:hover,
+    .message-image img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+
+    .message-image {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    /* Responsive adjustments for images */
+    @media (max-width: 768px) {
+      .info-image,
+      .message-image {
+        margin-top: 25px;
+      }
+
+      .info-image img,
+      .message-image img {
+        max-height: 250px;
+        object-fit: cover;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .info-image,
+      .message-image {
+        margin-top: 20px;
+      }
+
+      .info-image img,
+      .message-image img {
+        max-height: 200px;
+      }
+    }
+
+    /* Recognitions & Approvals Section */
+    .recognitions-approvals {
+      padding: 30px 0;
+      background: white;
+    }
+
+    .recognitions-approvals .section-title {
+      text-align: center;
+      
+    }
+
+    .recognitions-approvals .section-title h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #04415f;
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+    .recognitions-approvals .section-title h2::after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 3px;
+      background: linear-gradient(135deg, #2086b8 0%, #04415f 100%);
+      margin: 15px auto 0;
+      border-radius: 2px;
+    }
+
+    .recognitions-approvals .section-title p {
+      font-size: 1.1rem;
+      color: #666;
+      max-width: 540px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .approvals-content h4 {
+      line-height: 1.6;
+      font-weight: 500;
+    }
+
+    .approvals-content .feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .approvals-content .feature-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid #f0f0f0;
+      display: flex;
+      align-items: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .approvals-content .feature-list li:last-child {
+      border-bottom: none;
+    }
+
+    .approvals-content .feature-list li:hover {
+      background-color: #f8f9fa;
+      padding-left: 10px;
+    }
+
+    .approvals-content .feature-list i {
+      color: #2086b8;
+      margin-right: 15px;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .approvals-content .certi-link {
+      color: #04415f;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .approvals-content .certi-link:hover {
+      color: #2086b8;
+      text-decoration: underline;
+    }
+
+    .info-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .info-image img:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .recognitions-approvals {
+        padding: 60px 0;
+      }
+
+      .recognitions-approvals .section-title h2 {
+        font-size: 2rem;
+      }
+
+      .approvals-content h4 {
+        font-size: 1.1rem;
+      }
+    }
+
+    /* Justify all paragraphs */
+    p {
+      text-align: justify;
+    }
+  </style>
+</head>
+
+<body class="about-page">
+
+<style>
+
+.top-bar-wrapper {
+    width: 100%;
+    background-color: #07628f;
+}
+
+
+
+.header-admisson-btn {
+    display: flex;
+    flex: 1;
+}
+
+.social-links-2 {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.head-links {
+    margin-right: 10px;
+}
+
+
+/* --- Base Anchor/Button Styles --- */
+ 
+.adn-btn:hover {
+color: #ffffff;
+  transform: translateY(-2px); 
+
+}
+
+/* --- ON-CLICK Effect (The "Press") --- */
+.adn-btn:active {
+  /* Move the link back down slightly */
+  transform: translateY(-1px); 
+  
+  /* Smaller shadow for the pressed look */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+  
+
+/* Tablet specific styles */
+@media(min-width: 577px) and (max-width: 768px){
+    .header-admisson-btn {
+        flex-wrap: wrap;
+    }
+
+    .head-links {
+        margin: 0 5px 5px 0;
+    }
+
+    .adn-btn {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+}
+
+
+@media(max-width: 768px){
+    .top-bar-header {
+        display: flex;
+        flex-direction: column;
+        background-color: #07628f;
+        padding: 15px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .header-admisson-btn {
+  
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    .head-links {
+        margin: 0 0 10px 0;
+        width: 100%;
+                display: flex;
+        justify-content: center;
+    }
+
+    .social-links-2 {
+        margin: 10px 0 0 0;
+        align-self: flex-start;
+    }
+
+    .adn-btn {
+        color: #ffffff !important;
+        background-color: #04415f;
+        padding: 10px 15px;
+        border-radius: 50px;
+        margin: 0;
+        text-align: center;
+        font-size: 13px;
+        white-space: nowrap;
+        display: inline-block;
+        width: 70%;
+        max-width: 100%;
+    }
+    .centering-icons{
+      display: flex;
+      justify-content: center;
+    }
+}
+
+    .social-links-2{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0px 10px 10px;
+}
+
+</style>
+
+
+
+     <div class="top-bar-wrapper ">
+    <div class="container-fluid container-xl">
+        <div class="top-bar-header">
+        <div class="header-admisson-btn" >
+          <div class="head-links">
+              <a class="adn-btn" href="admissions.html"><i class="bi-book"> </i>  Admisson Open 2025 - 2026</a>
+          </div>
+        <div class="head-links">
+            <a class="adn-btn" href="tel:+91 9865147777"> <i class="bi-telephone-fill"> </i>    Admission Contact: 98651 47777</a>
+        </div>
+         <div class="head-links">
+              <a class="adn-btn"  href="http://121.200.50.180/next/web/eXdobEhHVE9mRXhsNGZMdTNKdHVRZj/hCMFNZZWpncVdQK0ZuOWJiTndCRT0">   <i class="bi bi-arrow-right-circle"> </i>  Online Payment</a>
+          </div>
+
+    </div>
+    <div class="centering-icons" style="margin-top: 6px;"> 
+      <div class="social-links-2">
+             <a  class="social-links-3"  href=""><i class="bi bi-twitter-x"></i></a>
+            <a class="social-links-3" href="https://www.facebook.com/people/Svcpscop-Svcpscop/pfbid02nfVP4a56Cpf5LmqiERoMRDQofsi7Wm2RR51t5fJjBngXSqF41u2JK6ZLCqtFhKRNl/?mibextid=rS40aB7S9Ucbxw6v"><i class="bi bi-facebook"></i></a>
+            <a class="social-links-3" href="https://www.instagram.com/svco_pt_ot_/?igsh=ZmdsbmQ5MnBrOXll#"><i class="bi bi-instagram"></i></a>
+           <a class="social-links-3"  href="https://www.youtube.com/@svcps"><i class="bi bi-youtube"></i></a>
+                </div>
+    </div>
+    
+    </div>
+    
+      </div>
+    </div>
+  <div class="sticky-top-1"> 
+  <header id="header" class="header d-flex align-items-center">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-end">
+
+      <div class="logo-section d-flex align-items-center me-auto">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+   <img src="assets/img/logo-fpng.png" alt="College logo">
+      </a>
+      <div class="college-name ms-3">
+        <h2 class="cg-name"> SHREE VENKATESHWARA</h2>
+        COLLEGE OF PARAMEDICAL SCIENCES<br>
+        COLLEGE OF PHYSIOTHERAPY<br>
+        <span class="affiliation">Affiliated to The Tamilnadu Dr.MGR Medical<br>
+        University, Chennai</span>
+      </div>
+    </div>
+
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+
+          <li class="dropdown"><a href="#"><span>Academics</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="academicsProgrammes.html">Programmes</a></li>
+              <li><a href="clinicaltraining.html">Clinical Training</a></li>
+            </ul>
+          </li>
+           <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="facilities.html" >Facilities</a></li>
+          <li><a href=#>Alumni</a></li>
+          <li><a href="links.html">Links</a></li>
+          <li><a href="news.html">News</a></li>  
+          <li><a href="infrastructure.html">Infrastructure</a></li>
+          <li><a href="gallery.html" >Gallery</a></li>
+          <li><a href="research.html" >Research</a></li>
+          <li><a href="career.html" >Career</a></li>
+          <li><a href="contact.html" >Contact Us</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      
+
+    </div>
+  </header>
+
+
+  </div>
+
+  <main class="main">
+
+    <!-- About Hero Section -->
+    <section class="about-hero">
+      <div class="container text-center" data-aos="fade-up">
+        <h2>Shree Venkateshwara College of Physiotherapy</h2>
+        <p>Our mission is to adopt progressive educational practices that inspire quality learning, encourage independent thought, and nurture the all-round growth of every student, enabling them to serve society and the nation with excellence.</p>
+      </div>
+    </section>
+
+    <!-- Horizontal Tabs Section -->
+    <section class="institution-info">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Horizontal Tabs -->
+        <div class="horizontal-tabs">
+
+          <!-- Tab Navigation (Horizontal) -->
+          <div class="tab-navigation">
+            <div class="row">
+              <div class="col-12">
+                <ul class="nav nav-tabs custom-nav-tabs" id="aboutTabs" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="about-tab" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="true">
+                      <i class="bi bi-building me-2"></i>
+                      About   <br class="desktop-break">the Institution
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="approvals-tab" type="button" role="tab" onclick="scrollToSection('recognitions-approvals')">
+                      <i class="bi bi-award me-2"></i>
+                      Recognitions <br class="desktop-break"> & Approvals
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="chairman-tab" data-bs-toggle="tab" data-bs-target="#chairman" type="button" role="tab" aria-controls="chairman" aria-selected="false" onclick="scrollToSection('chairman-message')">
+                      <i class="bi bi-person-badge me-2"></i>
+                      Chairman   <br class="desktop-break"> Message
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="secretary-tab" data-bs-toggle="tab" data-bs-target="#secretary" type="button" role="tab" aria-controls="secretary" aria-selected="false" onclick="scrollToSection('secretary-message')">
+                      <i class="bi bi-person-badge me-2"></i>
+                      Secretary  <br class="desktop-break"> Message
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="principal-tab" data-bs-toggle="tab" data-bs-target="#principal" type="button" role="tab" aria-controls="principal" aria-selected="false" onclick="scrollToSection('principal-message')">
+                      <i class="bi bi-person-badge me-2"></i>
+                      Principal  <br class="desktop-break">  Message
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        <style>
+          /* By default, hide the break (for mobile) */
+.desktop-break {
+  display: none;
+}
+
+/* On larger screens (like desktops/laptops), show the break */
+@media (min-width: 768px) {
+  .desktop-break {
+    display: inline;
+  }
+}
+        </style>
+
+          <!-- Tab Content -->
+          <div class="tab-content" id="aboutTabContent">
+
+            <!-- About the Institution Tab -->
+            <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+              <div class="tab-content-inner">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <div class="info-content" style="text-align: justify;">
+                      <ul class="feature-list">
+                        <li><i class="bi bi-check-circle-fill"></i> Shree Venkateshwara College of Physiotherapy has been a pioneer in the field of education since 2018, offering quality undergraduate programs.</li>
+                        <li><i class="bi bi-check-circle-fill"></i> The college features well-furnished, spacious, and ventilated classrooms equipped with advanced audio-visual aids.</li>
+                        <li><i class="bi bi-check-circle-fill"></i> We have state-of-the-art laboratories for Anatomy & Physiology, Exercise Therapy, Electrotherapy, Walking School, and an advanced gymnasium.</li>
+                        <li><i class="bi bi-check-circle-fill"></i> The library houses a collection of over 4,000 books along with subscriptions to national and international journals.</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Our separate digital library provides access to a wide range of digital resources and online journals in Physical Medicine and Rehabilitation.</li>
+                        <li><i class="bi bi-check-circle-fill"></i> We also have a well-equipped outpatient department that offers treatment completely free of cost.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                   <video autoplay muted loop class="video-background-1">
+                      <source src="assets/img/Videos/LogoVideo.mp4" type="video/mp4">
+                     </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <style>
+              .video-background-1{
+                margin-top: 10px;
+                  position: absolute;
+                  max-width: 30%;
+                  max-height: 44%;
+                   object-fit: cover;
+                   z-index: 1;
+                   border-radius: 10px;
+              }
+              @media(max-width :992px){
+                
+                    .video-background-1{
+               display: none;
+              }
+                
+              }
+            </style>
+  
+            <!-- Chairman Message Tab (Show About content while scrolling) -->
+            <div class="tab-pane fade" id="chairman" role="tabpanel" aria-labelledby="chairman-tab">
+              <div class="tab-content-inner">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <div class="info-content">
+                      <ul class="feature-list">
+                        <li><i class="bi bi-check-circle-fill"></i> Shree Venkateshwara College of Physiotherapy has been a pioneer in the field of education since 2018, offering quality undergraduate programs.</li>
+                        <li><i class="bi bi-check-circle-fill"></i> The college features well-furnished, spacious, and ventilated classrooms equipped with advanced audio-visual aids.</li>
+                        <li><i class="bi bi-check-circle-fill"></i> We have state-of-the-art laboratories for Anatomy & Physiology, Exercise Therapy, Electrotherapy, Walking School, and an advanced gymnasium.</li>
+                        <li><i class="bi bi-check-circle-fill"></i> The library houses a collection of over 4,000 books along with subscriptions to national and international journals.</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Our separate digital library provides access to a wide range of digital resources and online journals in Physical Medicine and Rehabilitation.</li>
+                        <li><i class="bi bi-check-circle-fill"></i> We also have a well-equipped outpatient department that offers treatment completely free of cost.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                   <video autoplay muted loop class="video-background-1">
+                      <source src="assets/img/Videos/LogoVideo.mp4" type="video/mp4">
+                     </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Secretary Message Tab (Show About content while scrolling) -->
+            <div class="tab-pane fade" id="secretary" role="tabpanel" aria-labelledby="secretary-tab">
+              <div class="tab-content-inner">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <div class="info-content">
+                      <ul class="feature-list">
+                        <li><i class="bi bi-check-circle-fill"></i> Shree Venkateshwara College of Physiotherapy has been a pioneer in the field of education since 2018, offering quality undergraduate programs.</li>
+                        <li><i class="bi bi-check-circle-fill"></i> The college features well-furnished, spacious, and ventilated classrooms equipped with advanced audio-visual aids.</li>
+                        <li><i class="bi bi-check-circle-fill"></i> We have state-of-the-art laboratories for Anatomy & Physiology, Exercise Therapy, Electrotherapy, Walking School, and an advanced gymnasium.</li>
+                        <li><i class="bi bi-check-circle-fill"></i> The library houses a collection of over 4,000 books along with subscriptions to national and international journals.</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Our separate digital library provides access to a wide range of digital resources and online journals in Physical Medicine and Rehabilitation.</li>
+                        <li><i class="bi bi-check-circle-fill"></i> We also have a well-equipped outpatient department that offers treatment completely free of cost.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                   <video autoplay muted loop class="video-background-1">
+                      <source src="assets/img/Videos/LogoVideo.mp4" type="video/mp4">
+                     </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Principal Message Tab (Show About content while scrolling) -->
+            <div class="tab-pane fade" id="principal" role="tabpanel" aria-labelledby="principal-tab">
+              <div class="tab-content-inner">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <div class="info-content">
+                      <ul class="feature-list">
+                        <li><i class="bi bi-check-circle-fill"></i> Shree Venkateshwara College of Physiotherapy has been a pioneer in the field of education since 2018, offering quality undergraduate programs.</li>
+                        <li><i class="bi bi-check-circle-fill"></i> The college features well-furnished, spacious, and ventilated classrooms equipped with advanced audio-visual aids.</li>
+                        <li><i class="bi bi-check-circle-fill"></i> We have state-of-the-art laboratories for Anatomy & Physiology, Exercise Therapy, Electrotherapy, Walking School, and an advanced gymnasium.</li>
+                        <li><i class="bi bi-check-circle-fill"></i> The library houses a collection of over 4,000 books along with subscriptions to national and international journals.</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Our separate digital library provides access to a wide range of digital resources and online journals in Physical Medicine and Rehabilitation.</li>
+                        <li><i class="bi bi-check-circle-fill"></i> We also have a well-equipped outpatient department that offers treatment completely free of cost.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                   <video autoplay muted loop class="video-background-1">
+                      <source src="assets/img/Videos/LogoVideo.mp4" type="video/mp4">
+                     </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- Recognitions & Approvals Section -->
+    <section id="recognitions-approvals" class="recognitions-approvals">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-title">
+          <h2>Recognitions & Approvals</h2>
+          <p>Official approvals and affiliations that validate our commitment to quality education</p>
+        </div>
+
+
+<div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+              <div class="tab-content-inner">
+               <div class="row">
+          <div class="col-lg-8">
+            <div class="approvals-content">
+              <h4 style="color: #2086b8; margin-bottom: 20px;">The college has been approved by the Government of Tamil Nadu and affiliated to the Tamil Nadu Dr. M.G.R Medical University, Chennai</h4>
+              <ul class="feature-list">
+                <li><i class="bi bi-check-circle-fill"></i> <a class="certi-link" href="/assets/img/pdfs/BPT GO.pdf">Govt. of Tamilnadu – GO</a></li>
+                <li><i class="bi bi-check-circle-fill"></i><a class="certi-link" href="/assets/img/pdfs/BPT COR.pdf">Certificate Of Registration – COR</a> </li>
+                <li><i class="bi bi-check-circle-fill"></i><a class="certi-link" href="/assets/img/pdfs/BPT PA.pdf">The Tamil Nadu Dr. M.G.R Medical University Provisional Affiliation – BPT</a> </li>
+                <li><i class="bi bi-check-circle-fill"></i> <a class="certi-link" href="">The Tamil Nadu Dr. M.G.R Medical University Continuous Provisional Affiliation -2020 – 21</a></li>
+                <li><i class="bi bi-check-circle-fill"></i> <a class="certi-link" href="">The Tamil Nadu Dr. M.G.R Medical University Continuous Provisional Affiliation -2021 -22 and 2022 -23</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="info-image">
+              <img src="assets/img/campus/1.jpg" alt="Recognitions" class="img-fluid rounded">
+            </div>
+          </div>
+        </div>
+      </div>
+              </div>
+            </div>
+    </section>
+
+    <!-- Leadership Messages Section -->
+    <section class="leadership-messages">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-title">
+          <h2 style="margin-top: 40px ;">Leadership Messages</h2>
+          <p>Words of wisdom and inspiration from our distinguished leaders who guide our institution towards excellence</p>
+        </div>
+
+        <!-- Chairman Message Section -->
+        <div id="chairman-message" class="col-12">
+          <div class="message-card" data-aos="fade-up" data-aos-delay="200">
+             <div class="message-header chairman-header">
+                    <div class="message-avatar" style="background: white; color: #2086b8;">PV</div>
+                    <div class="message-info">
+                      <h4>Thiru. P. VENKATACHALAM</h4>
+                      <p >Chairman</p>
+                    </div>
+                  </div>
+              <div class="row align-items-center">
+
+                <!-- Text Content - 65% -->
+                <div class="col-lg-8 col-md-7">
+                 
+                  <div class="message-quote">"The secret of life is not enjoyment but education through experience" – Swami Vivekananda</div>
+                  <div class="message-content">
+                    <p>At this juncture, I would like to acknowledge and extend my heartfelt gratitude to all those who have made significant contributions in bringing up the glory of our institution.</p>
+                    <ul>
+                      <li>It gives me great pride that Shree Venkateshwara College of Paramedical Sciences, College of Physiotherapy, has carried forward the rich legacy of our group of institutions. Through our commitment to professionalism and innovative teaching, we strive each year to make a meaningful contribution to humanity.</li>
+                      <li>I sincerely hope that aspiring students will make the right choice by joining this institution for their undergraduate education and will go on to become skilled and dedicated healthcare professionals.</li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Image - 35% -->
+                <div class="col-lg-4 col-md-5">
+                  <div class="message-image">
+                    <img src="assets/img/person/p.venkadachalam.webp" alt="Chairman" class="img-fluid rounded" style="object-fit: cover; height: 280px; width: 100%;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- Secretary Message Section -->
+        <div id="secretary-message" class="col-12">
+          <div class="message-card secretary-layout" data-aos="fade-up" data-aos-delay="300">
+            <div class="message-header secretary-header">
+                    <div class="message-avatar" style="background: white; color: #2086b8;">KK</div>
+                    <div class="message-info">
+                      <h4>Thiru. K.C. KARUPANAN</h4>
+                      <p>Secretary</p>
+                    </div>
+                  </div>
+              <div class="row align-items-center">
+                <!-- Image - 35% (Left Side) -->
+                <div class="col-lg-4 col-md-5 order-lg-1 order-md-1">
+                  <div class="message-image">
+                    <img src="assets/img/person/k.c.karuppanan.webp" alt="Secretary" class="img-fluid rounded" style="object-fit: cover; height: 280px; width: 100%;">
+                  </div>
+                </div>
+                <!-- Text Content - 65% (Right Side) -->
+                <div class="col-lg-8 col-md-7 order-lg-2 order-md-2">
+                  
+                  <div class="message-quote">"Challenges set the standard for the rise of talents" – Dr.J.Jayalalitha</div>
+                  <div class="message-content">
+                    <p>It gives me great pleasure to extend a warm welcome to our existing and prospective students, as well as their parents, to our college — an institution dedicated to shaping the youth of today, who will, in turn, build the society of tomorrow.</p>
+                    <ul>
+                      <li>Our students are encouraged to contribute meaningfully toward shaping our nation as a land of opportunities for future generations.</li>
+                      <li>The college strives to nurture the talents of its students through a variety of initiatives that enable them to explore diverse dimensions essential for their holistic development.</li>
+                      <li>Students are provided exposure not only to academic excellence but also to co-curricular activities that help uncover their hidden potential and prepare them for successful careers.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- Principal Message Section -->
+        <div id="principal-message" class="col-12">
+          <div class="message-card" data-aos="fade-up" data-aos-delay="400">
+               <div class="message-header principal-header">
+                    <div class="message-avatar" style="background: white; color: #2086b8;">NR</div>
+                    <div class="message-info">
+                      <h4>Prof. Nandakumar Ramasamy, MPT Ortho (PhD).</h4>
+                      <p>Principal</p>
+                    </div>
+                  </div>
+              <div class="row align-items-center">
+                <!-- Text Content - 65% -->
+                <div class="col-lg-8 col-md-7">
+               
+                  <div class="message-content">
+                    <p>Warm greetings to everyone! Welcome to the portal of Shree Venkateshwara College of Paramedical Sciences (College of Physiotherapy). I hope the time you spend here will be enriching and rewarding. It has been a privilege to serve this wonderful institution as the Founding Principal since 2018.</p>
+                    <ul>
+                      <li>Healthcare is a noble profession, held in the highest regard since ancient times.</li>
+                      <li>Physiotherapy, as a vital branch of medical science, offers opportunities and possibilities beyond imagination.</li>
+                      <li>The unique blend of medical science and physical movement aids in rehabilitation and promotes harmony of mind, body, and soul.</li>
+                      <li>Our ultimate goal is to prepare physiotherapists who are excellent clinical thinkers, dedicated team players, and lifelong learners capable of serving across diverse healthcare domains.</li>
+                      <li>We take pride in our highly qualified faculty — exceptional teachers and skilled practitioners whose contributions continue to inspire growth in the field of physiotherapy.</li>
+                    </ul>
+                    <p>We warmly welcome all aspiring students to our institution for a promising new beginning. Happy learning and happy surfing!</p>
+                  </div>
+                </div>
+                <!-- Image - 35% -->
+                <div class="col-lg-4 col-md-5">
+                  <div class="message-image">
+                    <img src="assets/img/person/person-m-6.webp" alt="Principal" class="img-fluid rounded" style="object-fit: cover; height: 280px; width: 100%;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-title">
+          <h2 style="color: white;">Our Achievements</h2>
+          <p style="color: rgba(255,255,255,0.9);">Numbers that speak volumes about our commitment to excellence</p>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+            <span class="stat-number">6+</span>
+            <span class="stat-label">Years of Excellence</span>
+          </div>
+          <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+            <span class="stat-number">4000+</span>
+            <span class="stat-label">Library Books</span>
+          </div>
+          <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Clinical Exposure</span>
+          </div>
+          <div class="stat-card" data-aos="fade-up" data-aos-delay="500">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">Healthcare Partners</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+ <footer id="footer" class="footer position-relative light-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-3 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+        <img class="img-logo-footer" src="assets/img/logo-fpng.png" alt="College logo">
+          </a>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/people/Svcpscop-Svcpscop/pfbid02nfVP4a56Cpf5LmqiERoMRDQofsi7Wm2RR51t5fJjBngXSqF41u2JK6ZLCqtFhKRNl/?mibextid=rS40aB7S9Ucbxw6v"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/svco_pt_ot_/?igsh=ZmdsbmQ5MnBrOXll#"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/@svcps"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>QUICK LINKS</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html" style="font-weight: 600;">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>OUR FACILITIES</h4>
+          <ul>
+            <li><a href="#">Hostel</a></li>
+            <li><a href="#">Cafeteria</a></li>
+            <li><a href="#">Laboratory</a></li>
+            <li><a href="#">Libraries</a></li>
+            <li><a href="#">Transport</a></li>
+            <li><a href="#">Research Centre</a></li>
+          </ul>
+        </div>
+
+      <div class="col-lg-3 col-md-6 footer-about">
+           <h4>COLLEGE ADDRESS</h4>
+          <div class="footer-contact">
+            <p>Sri Kalaivani Nagar, Otthakkuthirai,</p>
+            <p>K.Mettupalayam (PO) - 638 455</p>
+            <p>Gobichettipalayam, Erode Dt, Tamil Nadu.</p>
+            <p class="mt-33" ><strong>Phone:</strong> <a href="tel:+91 9003686322">+91 9003686322</a></p>
+               <p class="mt-33"><strong>Phone:</strong> <a href="tel:+91 8122889988">+91 8122889988</a></p>
+            <p class="mt-33"><strong>Email:</strong> <a href="mailto:svcpsphysio@gmail.com">svcpsphysio@gmail.com</a></p>
+            <p class="mt-33"><strong>Email:</strong> <a href="mailto:physioedu@svcps.in">physioedu@svcps.in</a></p>
+            <p class="mt-33"><strong>Website:</strong>  <a href="www.svcps.in">www.svcps.in</a></p>
+          </div>
+          <style>
+            .mt-33{
+              font-family:Arial, Helvetica, sans-serif !important;
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright text-center mt-4">
+      <p>© 2024 <a href="https://diginexus.co.in" target="_blank" style="color: inherit; text-decoration: none;">Digi Nexus</a>. All rights reserved.</p>
+
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Custom JavaScript for Smooth Scrolling -->
+  <script>
+    function scrollToSection(sectionId) {
+      setTimeout(function() {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          // Smooth scroll to section with better positioning
+          // Use 'center' to ensure full section is visible
+          element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'center'
+          });
+        }
+      }, 100);
+    }
+  </script>
+
+
+</body>
+
+</html>

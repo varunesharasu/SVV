@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Useful Links - Shree Venkateshwara College of Physiotherapy</title>
+  <meta name="description" content="Useful links and resources for physiotherapy students and professionals">
+  <meta name="keywords" content="physiotherapy links, educational resources, professional associations, university links">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Links Page Styles -->
+  <style>
+    .p{
+      text-align: justify !important;
+    }
+
+    /* Navigation Bar Hover Effects */
+    .navmenu ul li a {
+      position: relative;
+      transition: all 0.5s ease;
+    }
+
+    .navmenu ul li a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 5px;
+      left: 50%;
+      background: #04415f;
+      transition: all 0.5s ease;
+      transform: translateX(-50%);
+    }
+
+    .navmenu ul li a:hover {
+      color: #2086b8 !important;
+      transform: translateY(-2px);
+    }
+
+    .navmenu ul li a:hover::after {
+      width: 80%;
+    }
+
+    .navmenu ul li.active a {
+      color: #04415f !important;
+    }
+
+    .navmenu ul li.active a::after {
+      width: 80%;
+      background: #04415f;
+    }
+
+    /* Hero Section */
+    .links-hero {
+      background: linear-gradient(135deg, #2086b8, #04415f);
+      color: white;
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .links-hero h2 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    .links-hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+      opacity: 0.95;
+      text-align: center;
+    }
+
+    /* Links Section */
+    .links-section {
+      padding: 60px 0;
+    }
+
+    .link-category {
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+      height: 100%;
+      border-top: 4px solid #2086b8;
+    }
+
+    .link-category:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(32, 134, 184, 0.2);
+    }
+
+    .link-category h3 {
+      color: #04415f;
+      font-weight: 700;
+      margin-bottom: 25px;
+      padding-bottom: 15px;
+      border-bottom: 2px solid #f0f0f0;
+    }
+
+    .link-category h3 i {
+      color: #2086b8;
+      margin-right: 10px;
+    }
+
+    .link-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .link-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .link-list li:last-child {
+      border-bottom: none;
+    }
+
+    .link-list a {
+      color: #333;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .link-list a:hover {
+      color: #2086b8;
+      padding-left: 10px;
+    }
+
+    .link-list a i {
+      color: #2086b8;
+      font-size: 0.9rem;
+    }
+
+    /* Resource Cards */
+    .resource-card {
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: all 0.3s ease;
+      height: 100%;
+      border: 2px solid transparent;
+    }
+
+    .resource-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(32, 134, 184, 0.2);
+      border-color: #2086b8;
+    }
+
+    .resource-card .icon-box {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, #2086b8, #04415f);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+    }
+
+    .resource-card .icon-box i {
+      font-size: 2.5rem;
+      color: white;
+    }
+
+    .resource-card h4 {
+      color: #04415f;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .resource-card p {
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    .resource-card .btn-visit {
+      display: inline-block;
+      background: linear-gradient(135deg, #2086b8, #04415f);
+      color: white;
+      padding: 10px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 15px;
+      transition: all 0.3s ease;
+    }
+
+    .resource-card .btn-visit:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 20px rgba(32, 134, 184, 0.3);
+      color: white;
+    }
+  </style>
+
+</head>
+
+<body class="links-page">
+
+<style>
+.top-bar-wrapper {
+    width: 100%;
+    background-color: #07628f;
+}
+
+.top-bar-header {
+    display: flex;
+    background-color: #07628f;
+    align-items: center;
+    padding: 3px 10px;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.header-admisson-btn {
+    display: flex;
+    flex: 1;
+}
+
+.social-links-2 {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.head-links {
+    margin-right: 10px;
+}
+
+.adn-btn:hover {
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.adn-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media(max-width: 768px){
+    .top-bar-header {
+        display: flex;
+        flex-direction: column;
+        background-color: #07628f;
+        padding: 15px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .header-admisson-btn {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .head-links {
+        margin: 5px;
+    }
+    .social-links-2 {
+        justify-content: center;
+    }
+}
+</style>
+
+
+     <div class="top-bar-wrapper ">
+    <div class="container-fluid container-xl">
+        <div class="top-bar-header">
+        <div class="header-admisson-btn" >
+          <div class="head-links">
+              <a class="adn-btn" href="admissions.html"><i class="bi-book"> </i>  Admisson Open 2025 - 2026</a>
+          </div>
+        <div class="head-links">
+            <a class="adn-btn" href="tel:+91 9865147777"> <i class="bi-telephone-fill"> </i>    Admission Contact: 98651 47777</a>
+        </div>
+         <div class="head-links">
+              <a class="adn-btn"  href="http://121.200.50.180/next/web/eXdobEhHVE9mRXhsNGZMdTNKdHVRZj/hCMFNZZWpncVdQK0ZuOWJiTndCRT0">   <i class="bi bi-arrow-right-circle"> </i>  Online Payment</a>
+          </div>
+
+    </div>
+    <div class="centering-icons" style="margin-top: 6px;">
+      <div class="social-links-2">
+             <a class="social-links-3" href=""><i class="bi bi-twitter-x"></i></a>
+            <a class="social-links-3" href="https://www.facebook.com/people/Svcpscop-Svcpscop/pfbid02nfVP4a56Cpf5LmqiERoMRDQofsi7Wm2RR51t5fJjBngXSqF41u2JK6ZLCqtFhKRNl/?mibextid=rS40aB7S9Ucbxw6v"><i class="bi bi-facebook"></i></a>
+            <a class="social-links-3" href="https://www.instagram.com/svco_pt_ot_/?igsh=ZmdsbmQ5MnBrOXll#"><i class="bi bi-instagram"></i></a>
+           <a class="social-links-3" href="https://www.youtube.com/@svcps"><i class="bi bi-youtube"></i></a>
+                </div>
+    </div>
+    </div>
+      </div>
+    </div>
+  <div class="sticky-top-1">
+  <header id="header" class="header d-flex align-items-center">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-end">
+
+      <div class="logo-section d-flex align-items-center me-auto">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo-fpng.png" alt="College logo">
+      </a>
+      <div class="college-name ms-3">
+        <h2 class="cg-name"> SHREE VENKATESHWARA</h2>
+        COLLEGE OF PARAMEDICAL SCIENCES<br>
+        COLLEGE OF PHYSIOTHERAPY<br>
+        <span class="affiliation">Affiliated to The Tamilnadu Dr.MGR Medical<br>
+        University, Chennai</span>
+      </div>
+    </div>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+
+          <li class="dropdown"><a href="#"><span>Academics</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="academicsProgrammes.html">Programmes</a></li>
+              <li><a href="clinicaltraining.html">Clinical Training</a></li>
+            </ul>
+          </li>
+           <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="facilities.html" >Facilities</a></li>
+          <li><a href=#>Alumni</a></li>
+          <li><a href="links.html" class="active">Links</a></li>
+          <li><a href="news.html">News</a></li>  
+          <li><a href="infrastructure.html">Infrastructure</a></li>
+          <li><a href="gallery.html" >Gallery</a></li>
+          <li><a href="research.html" >Research</a></li>
+          <li><a href="career.html" >Career</a></li>
+          <li><a href="contact.html" >Contact Us</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  </div>
+
+  <main class="main">
+<style>
+      .links-hero{
+          background: linear-gradient(rgba(4, 65, 95, 0.8), rgba(4, 65, 95, 0.8)), url(assets/img/campus/1.jpg) center / cover;
+    color: white;
+    padding: 80px 0 60px;
+    text-align: center;
+    position: relative;
+    background-attachment: fixed;
+}
+    </style>
+    <!-- Links Hero Section -->
+    <section class="links-hero">
+      <div class="container text-center" data-aos="fade-up">
+        <h2>Useful Links</h2>
+        <p>Access important resources, professional bodies, and educational institutions for physiotherapy.</p>
+      </div>
+    </section>
+
+    <!-- University & Government Links -->
+    <section class="links-section">
+      <div class="container" data-aos="fade-up">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="link-category">
+              <h3><i class="bi bi-building"></i> University & Government</h3>
+              <ul class="link-list">
+                <li><a href="https://www.tnmgrmu.ac.in/" target="_blank"><i class="bi bi-arrow-right-circle"></i> The Tamilnadu Dr.MGR Medical University</a></li>
+                <li><a href="https://www.tnhealth.tn.gov.in/" target="_blank"><i class="bi bi-arrow-right-circle"></i> Tamil Nadu Health Department</a></li>
+                <li><a href="https://www.tn.gov.in/" target="_blank"><i class="bi bi-arrow-right-circle"></i> Government of Tamil Nadu</a></li>
+                <li><a href="https://www.ugc.ac.in/" target="_blank"><i class="bi bi-arrow-right-circle"></i> University Grants Commission (UGC)</a></li>
+                <li><a href="https://www.aicte-india.org/" target="_blank"><i class="bi bi-arrow-right-circle"></i> AICTE</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="link-category">
+              <h3><i class="bi bi-people"></i> Professional Associations</h3>
+              <ul class="link-list">
+                <li><a href="https://www.iap.org.in/" target="_blank"><i class="bi bi-arrow-right-circle"></i> Indian Association of Physiotherapists (IAP)</a></li>
+                <li><a href="https://www.physioassociationofindia.com/" target="_blank"><i class="bi bi-arrow-right-circle"></i> Physiotherapy Association of India</a></li>
+                <li><a href="https://www.wcpt.org/" target="_blank"><i class="bi bi-arrow-right-circle"></i> World Confederation for Physical Therapy</a></li>
+                <li><a href="https://www.apta.org/" target="_blank"><i class="bi bi-arrow-right-circle"></i> American Physical Therapy Association</a></li>
+                <li><a href="https://www.csp.org.uk/" target="_blank"><i class="bi bi-arrow-right-circle"></i> Chartered Society of Physiotherapy (UK)</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Educational Resources -->
+    <section class="links-section" style="background: #f8f9fa;">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title text-center mb-5">
+          <h2 style="color: #04415f; font-weight: 700;">Educational Resources</h2>
+          <p class="p-1">Online learning platforms and educational resources for physiotherapy students.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="resource-card">
+              <div class="icon-box">
+                <i class="bi bi-journal-medical"></i>
+              </div>
+              <h4>PubMed</h4>
+              <p class="p">Free search engine accessing primarily the MEDLINE database of references and abstracts on life sciences and biomedical topics.</p>
+              <a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" class="btn-visit">Visit Site</a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="resource-card">
+              <div class="icon-box">
+                <i class="bi bi-book"></i>
+              </div>
+              <h4>PEDro</h4>
+              <p class="p">Physiotherapy Evidence Database - Free database of over 50,000 randomized trials, systematic reviews and clinical practice guidelines.</p>
+              <a href="https://www.pedro.org.au/" target="_blank" class="btn-visit">Visit Site</a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="resource-card">
+              <div class="icon-box">
+                <i class="bi bi-camera-video"></i>
+              </div>
+              <h4>Physiopedia</h4>
+              <p class="p">Collaborative encyclopedia for physiotherapy professionals and students with free access to evidence-based content.</p>
+              <a href="https://www.physio-pedia.com/" target="_blank" class="btn-visit">Visit Site</a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="resource-card">
+              <div class="icon-box">
+                <i class="bi bi-play-circle"></i>
+              </div>
+              <h4>YouTube Channels</h4>
+              <p class="p">Educational video channels for physiotherapy techniques, anatomy, and practical demonstrations.</p>
+              <a href="https://www.youtube.com/" target="_blank" class="btn-visit">Explore</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- More Categories -->
+    <section class="links-section">
+      <div class="container" data-aos="fade-up">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="link-category">
+              <h3><i class="bi bi-journals"></i> Journals & Publications</h3>
+              <ul class="link-list">
+                <li><a href="https://journals.lww.com/jorthopt/" target="_blank"><i class="bi bi-arrow-right-circle"></i> Journal of Orthopaedic & Sports Physical Therapy</a></li>
+                <li><a href="https://www.physiotherapy-journal.com/" target="_blank"><i class="bi bi-arrow-right-circle"></i> Physiotherapy Journal</a></li>
+                <li><a href="https://www.biomedcentral.com/jnlist" target="_blank"><i class="bi bi-arrow-right-circle"></i> BMC Sports Science, Medicine and Rehabilitation</a></li>
+                <li><a href="https://ijpt.com/" target="_blank"><i class="bi bi-arrow-right-circle"></i> Indian Journal of Physiotherapy</a></li>
+                <li><a href="https://www.sciencedirect.com/" target="_blank"><i class="bi bi-arrow-right-circle"></i> ScienceDirect - Physical Therapy</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="link-category">
+              <h3><i class="bi bi-heart-pulse"></i> Healthcare & Research</h3>
+              <ul class="link-list">
+                <li><a href="https://www.who.int/" target="_blank"><i class="bi bi-arrow-right-circle"></i> World Health Organization (WHO)</a></li>
+                <li><a href="https://www.cochranelibrary.com/" target="_blank"><i class="bi bi-arrow-right-circle"></i> Cochrane Library - Systematic Reviews</a></li>
+                <li><a href="https://clinicaltrials.gov/" target="_blank"><i class="bi bi-arrow-right-circle"></i> Clinical Trials.gov</a></li>
+                <li><a href="https://www.ncbi.nlm.nih.gov/" target="_blank"><i class="bi bi-arrow-right-circle"></i> National Center for Biotechnology Information</a></li>
+                <li><a href="https://www.researchgate.net/" target="_blank"><i class="bi bi-arrow-right-circle"></i> ResearchGate - Scientific Network</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Student Resources -->
+    <section class="links-section" style="background: #f8f9fa;">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title text-center mb-5">
+          <h2 style="color: #04415f; font-weight: 700;">Student Resources</h2>
+          <p class="p-1">Helpful resources for academic and professional development.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="resource-card">
+              <div class="icon-box">
+                <i class="bi bi-file-earmark-text"></i>
+              </div>
+              <h4>Academic Writing</h4>
+              <p class="p">Resources for research paper writing, citation styles, and academic publication guidelines.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="resource-card">
+              <div class="icon-box">
+                <i class="bi bi-graph-up"></i>
+              </div>
+              <h4>Statistical Tools</h4>
+              <p class="p">Statistical software tutorials and data analysis resources for research projects.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="resource-card">
+              <div class="icon-box">
+                <i class="bi bi-person-workspace"></i>
+              </div>
+              <h4>Career Guidance</h4>
+              <p class="p">Career planning resources, job portals, and professional development opportunities.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- External Links Notice -->
+    <section class="links-section">
+      <div class="container" data-aos="fade-up">
+        <div class="alert alert-info" role="alert" style="border-radius: 15px; border-left: 5px solid #2086b8;">
+          <h5 class="alert-heading" style="color: #04415f;"><i class="bi bi-info-circle"></i> External Link Disclaimer</h5>
+          <p class="mb-0">These links are provided for your convenience and information. The college is not responsible for the content or availability of external websites. Inclusion of a link does not imply endorsement.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+ <footer id="footer" class="footer position-relative light-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-3 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+        <img class="img-logo-footer" src="assets/img/logo-fpng.png" alt="College logo">
+          </a>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/people/Svcpscop-Svcpscop/pfbid02nfVP4a56Cpf5LmqiERoMRDQofsi7Wm2RR51t5fJjBngXSqF41u2JK6ZLCqtFhKRNl/?mibextid=rS40aB7S9Ucbxw6v"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/svco_pt_ot_/?igsh=ZmdsbmQ5MnBrOXll#"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/@svcps"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>QUICK LINKS</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html" style="font-weight: 600;">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>OUR FACILITIES</h4>
+          <ul>
+            <li><a href="#">Hostel</a></li>
+            <li><a href="#">Cafeteria</a></li>
+            <li><a href="#">Laboratory</a></li>
+            <li><a href="#">Libraries</a></li>
+            <li><a href="#">Transport</a></li>
+            <li><a href="#">Research Centre</a></li>
+          </ul>
+        </div>
+
+      <div class="col-lg-3 col-md-6 footer-about">
+           <h4>COLLEGE ADDRESS</h4>
+          <div class="footer-contact">
+            <p>Sri Kalaivani Nagar, Otthakkuthirai,</p>
+            <p>K.Mettupalayam (PO) - 638 455</p>
+            <p>Gobichettipalayam, Erode Dt, Tamil Nadu.</p>
+            <p class="mt-33" ><strong>Phone:</strong> <a href="tel:+91 9003686322">+91 9003686322</a></p>
+               <p class="mt-33"><strong>Phone:</strong> <a href="tel:+91 8122889988">+91 8122889988</a></p>
+            <p class="mt-33"><strong>Email:</strong> <a href="mailto:svcpsphysio@gmail.com">svcpsphysio@gmail.com</a></p>
+            <p class="mt-33"><strong>Email:</strong> <a href="mailto:physioedu@svcps.in">physioedu@svcps.in</a></p>
+            <p class="mt-33"><strong>Website:</strong>  <a href="www.svcps.in">www.svcps.in</a></p>
+          </div>
+          <style>
+            .mt-33{
+              font-family:Arial, Helvetica, sans-serif !important;
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright text-center mt-4">
+      <p>© 2024 <a href="https://diginexus.co.in" target="_blank" style="color: inherit; text-decoration: none;">Digi Nexus</a>. All rights reserved.</p>
+
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

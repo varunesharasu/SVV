@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Gallery - College Bootstrap Template</title>
+  <meta name="description" content="Explore our campus gallery and see the facilities, events, and activities at Shree Venkateshwara College of Physiotherapy">
+  <meta name="keywords" content="gallery, campus, photos, events, facilities, physiotherapy college">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Gallery Page CSS -->
+  <style>
+    /* Navigation Bar Hover Effects */
+    .navmenu ul li a {
+      position: relative;
+      transition: all 0.5s ease;
+    }
+
+    .navmenu ul li a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 5px;
+      left: 50%;
+      background: #04415f;
+      transition: all 0.5s ease;
+      transform: translateX(-50%);
+    }
+
+    .navmenu ul li a:hover {
+      color: #2086b8 !important;
+    
+    }
+
+    .navmenu ul li a:hover::after {
+      width: 80%;
+    }
+
+    .navmenu ul li.active a {
+      color: #04415f !important;
+    }
+
+    .navmenu ul li.active a::after {
+      width: 80%;
+      background: #04415f;
+    }
+
+    .navmenu .dropdown ul li a:hover {
+      background: linear-gradient(90deg, rgba(32, 134, 184, 0.1), rgba(4, 65, 95, 0.1));
+      color: #04415f !important;
+      padding-left: 25px;
+    }
+
+    /* Mobile Navigation Hover Effects */
+ 
+  </style>
+
+  <!-- =======================================================
+  * Template Name: College
+  * Template URL: https://bootstrapmade.com/college-bootstrap-education-template/
+  * Updated: Jun 19 2025 with Bootstrap v5.3.6
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="gallery-page">
+
+  
+<style>
+
+ .gallery-hero{
+     background:linear-gradient(rgba(4, 65, 95, 0.8), rgba(4, 65, 95, 0.8)), url(assets/img/campus/1.jpg)center / cover;
+    color: white;
+    padding: 40px 0 ;
+    text-align: center;
+    position: relative;
+    background-attachment: fixed;
+ }
+
+.top-bar-wrapper {
+    width: 100%;
+    background-color: #07628f;
+}
+
+
+
+.header-admisson-btn {
+    display: flex;
+    flex: 1;
+}
+
+.social-links-2 {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.head-links {
+    margin-right: 10px;
+}
+
+/* --- Base Anchor/Button Styles --- */
+ 
+.adn-btn:hover {
+color: #ffffff;
+  transform: translateY(-2px); 
+
+}
+
+/* --- ON-CLICK Effect (The "Press") --- */
+.adn-btn:active {
+  /* Move the link back down slightly */
+  transform: translateY(-1px); 
+  
+  /* Smaller shadow for the pressed look */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+  
+
+/* Tablet specific styles */
+@media(min-width: 577px) and (max-width: 768px){
+    .header-admisson-btn {
+        flex-wrap: wrap;
+    }
+
+    .head-links {
+        margin: 0 5px 5px 0;
+    }
+
+    .adn-btn {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+}
+
+@media(max-width: 768px){
+    .top-bar-header {
+        display: flex;
+        flex-direction: column;
+        background-color: #07628f;
+        padding: 15px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .header-admisson-btn {
+  
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    .head-links {
+        margin: 0 0 10px 0;
+        width: 100%;
+                display: flex;
+        justify-content: center;
+    }
+
+    .social-links-2 {
+        margin: 10px 0 0 0;
+        align-self: flex-start;
+    }
+
+    .adn-btn {
+        color: #ffffff !important;
+        background-color: #04415f;
+        padding: 10px 15px;
+        border-radius: 50px;
+        margin: 0;
+        text-align: center;
+        font-size: 13px;
+        white-space: nowrap;
+        display: inline-block;
+        width: 70%;
+        max-width: 100%;
+    }
+    .centering-icons{
+      display: flex;
+      justify-content: center;
+    }
+}
+
+    .social-links-2{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0px 10px 10px;
+}
+
+
+</style>
+
+
+
+     <div class="top-bar-wrapper ">
+    <div class="container-fluid container-xl">
+        <div class="top-bar-header">
+        <div class="header-admisson-btn" >
+          <div class="head-links">
+              <a class="adn-btn" href="admissions.html"><i class="bi-book"> </i>  Admisson Open 2025 - 2026</a>
+          </div>
+        <div class="head-links">
+            <a class="adn-btn" href="tel:+91 9865147777"> <i class="bi-telephone-fill"> </i>    Admission Contact: 98651 47777</a>
+        </div>
+         <div class="head-links">
+              <a class="adn-btn"  href="http://121.200.50.180/next/web/eXdobEhHVE9mRXhsNGZMdTNKdHVRZj/hCMFNZZWpncVdQK0ZuOWJiTndCRT0">   <i class="bi bi-arrow-right-circle"> </i>  Online Payment</a>
+          </div>
+
+    </div>
+    <div class="centering-icons" style="margin-top: 6px;"> 
+      <div class="social-links-2">
+             <a  class="social-links-3"  href=""><i class="bi bi-twitter-x"></i></a>
+            <a class="social-links-3" href="https://www.facebook.com/people/Svcpscop-Svcpscop/pfbid02nfVP4a56Cpf5LmqiERoMRDQofsi7Wm2RR51t5fJjBngXSqF41u2JK6ZLCqtFhKRNl/?mibextid=rS40aB7S9Ucbxw6v"><i class="bi bi-facebook"></i></a>
+            <a class="social-links-3" href="https://www.instagram.com/svco_pt_ot_/?igsh=ZmdsbmQ5MnBrOXll#"><i class="bi bi-instagram"></i></a>
+           <a class="social-links-3"  href="https://www.youtube.com/@svcps"><i class="bi bi-youtube"></i></a>
+                </div>
+    </div>
+    
+    </div>
+    
+      </div>
+    </div>
+  <div class="sticky-top-1"> 
+  <header id="header" class="header d-flex align-items-center">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-end">
+
+      <div class="logo-section d-flex align-items-center me-auto">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo-fpng.png" alt="College logo">
+      </a>
+      <div class="college-name ms-3">
+       <h2 class="cg-name"> SHREE VENKATESHWARA</h2>
+        COLLEGE OF PARAMEDICAL SCIENCES<br>
+        COLLEGE OF PHYSIOTHERAPY<br>
+        <span class="affiliation">Affiliated to The Tamilnadu Dr.MGR Medical<br>
+        University, Chennai</span>
+      </div>
+    </div>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+
+          <li class="dropdown"><a href="#"><span>Academics</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="academicsProgrammes.html">Programmes</a></li>
+              <li><a href="clinicaltraining.html">Clinical Training</a></li>
+            </ul>
+          </li>
+           <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="facilities.html" >Facilities</a></li>
+          <li><a href=#>Alumni</a></li>
+          <li><a href="links.html">Links</a></li>
+          <li><a href="news.html">News</a></li>  
+          <li><a href="infrastructure.html">Infrastructure</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="research.html" >Research</a></li>
+          <li><a href="career.html" >Career</a></li>
+          <li><a href="contact.html" >Contact Us</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+
+  </div>
+
+  <main class="main">
+
+    <!-- Gallery Hero Section -->
+    <section class="gallery-hero hero section">
+      <div class="hero-wrapper">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-12 hero-content" data-aos="fade-right" data-aos-delay="100">
+              <h1 style="color: #fff;">Gallery</h1>
+              <p>Explore our campus life, facilities, events, and activities through our visual journey</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Content Section -->
+    <section id="gallery-content" class="gallery section">
+      <div class="gallery-container">
+
+        <!-- Photo Gallery Grid -->
+        <div class="photo-gallery" id="photoGallery">
+
+          <!-- Campus Photos -->
+
+          <figure class="gallery-item" data-category="activities">
+            <div class="image-container" onclick="window.location.href='student-seminar-gallery.html'" style="cursor: pointer;">
+              <img src="assets/img/classrooms/CLASS-ROOM-scaled.jpg" alt="Student Seminar" loading="lazy">
+              <div class="image-overlay">
+                <div class="overlay-content">
+                  <h3>Student Seminar</h3>
+                  <p>Knowledge sharing</p>
+                  <small style="color: #ffd700; font-size: 12px; margin-top: 5px; display: block;">
+                    <i class="bi bi-box-arrow-up-right"></i> Click to view gallery
+                  </small>
+                </div>
+              </div>
+            </div>
+          </figure>
+
+          <figure class="gallery-item" data-category="activities">
+            <div class="image-container" onclick="window.location.href='lab-training-gallery.html'" style="cursor: pointer;">
+              <img src="assets/img/Electrotherapy Department/IMG_0120.JPG.jpeg" alt="Laboratory Training" loading="lazy">
+              <div class="image-overlay">
+                <div class="overlay-content">
+                  <h3>Lab Training</h3>
+                  <p>Practical skills</p>
+                  <small style="color: #ffd700; font-size: 12px; margin-top: 5px; display: block;">
+                    <i class="bi bi-box-arrow-up-right"></i> Click to view gallery
+                  </small>
+                </div>
+              </div>
+            </div>
+          </figure>
+
+                    <!-- Facilities Photos -->
+          <figure class="gallery-item" data-category="facilities">
+            <div class="image-container" onclick="window.location.href='massage-therapy-gallery.html'" style="cursor: pointer;">
+              <img src="assets/img/OPD/2.jpg" alt="Physiotherapy Laboratory" loading="lazy">
+              <div class="image-overlay">
+                <div class="overlay-content">
+                  <h3>Massage Therapy</h3>
+                 <p>Therapeutic body treatment</p>
+                  <small style="color: #ffd700; font-size: 12px; margin-top: 5px; display: block;">
+                    <i class="bi bi-box-arrow-up-right"></i> Click to view gallery
+                  </small>
+                </div>
+              </div>
+            </div>
+          </figure>
+
+          <figure class="gallery-item" data-category="facilities">
+            <div class="image-container" onclick="window.location.href='anatomy-physiology-lab-gallery.html'" style="cursor: pointer;">
+              <img src="assets/img/Anatomy Physiology Lab/img-4.jpg" alt="Exercise Therapy Room" loading="lazy">
+              <div class="image-overlay">
+                <div class="overlay-content">
+                  <h3>Anatomy Physiology Lab</h3>
+                  <p> Practical learning of body structure and functions</p>
+                  <small style="color: #ffd700; font-size: 12px; margin-top: 5px; display: block;">
+                    <i class="bi bi-box-arrow-up-right"></i> Click to view gallery
+                  </small>
+                </div>
+              </div>
+            </div>
+          </figure>
+
+          
+          <figure class="gallery-item" data-category="facilities">
+            <div class="image-container" onclick="window.location.href='opd-gallery.html'" style="cursor: pointer;">
+              <img src="assets/img/OPD/3.jpg" alt="Computer Laboratory" loading="lazy">
+              <div class="image-overlay">
+                <div class="overlay-content">
+                  <h3>OPD</h3>
+                   <p>Outpatient medical consultation</p>
+                  <small style="color: #ffd700; font-size: 12px; margin-top: 5px; display: block;">
+                    <i class="bi bi-box-arrow-up-right"></i> Click to view gallery
+                  </small>
+                </div>
+              </div>
+            </div>
+          </figure>
+
+      <!-- Activities Photos -->
+          <figure class="gallery-item" data-category="activities">
+            <div class="image-container" onclick="window.location.href='practical-session-gallery.html'" style="cursor: pointer;">
+              <img src="assets/img/Walking School/IMG03.jpg" alt="Practical Training Session" loading="lazy">
+              <div class="image-overlay">
+                <div class="overlay-content">
+                  <h3>Practical Session</h3>
+                  <p>Hands-on learning</p>
+                  <small style="color: #ffd700; font-size: 12px; margin-top: 5px; display: block;">
+                    <i class="bi bi-box-arrow-up-right"></i> Click to view gallery
+                  </small>
+                </div>
+              </div>
+            </div>
+          </figure>
+
+          <figure class="gallery-item" data-category="activities">
+            <div class="image-container" onclick="window.location.href='workshop-gallery.html'" style="cursor: pointer;">
+              <img src="assets/img/Motivational Class/1.jpg" alt="Workshop Activity" loading="lazy">
+              <div class="image-overlay">
+                <div class="overlay-content">
+                  <h3>Workshop</h3>
+                  <p>Skill development</p>
+                  <small style="color: #ffd700; font-size: 12px; margin-top: 5px; display: block;">
+                    <i class="bi bi-box-arrow-up-right"></i> Click to view gallery
+                  </small>
+                </div>
+              </div>
+            </div>
+          </figure>
+
+          <figure class="gallery-item" data-category="campus">
+            <div class="image-container" onclick="window.location.href='faculty-awards-gallery.html'" style="cursor: pointer;">
+              <img src="assets/img/awards/2.jpg" alt="Campus Building" loading="lazy">
+              <div class="image-overlay">
+                <div class="overlay-content">
+                  <h3>Faculty Awards</h3>
+                <p>Recognition of excellence</p>
+                  <small style="color: #ffd700; font-size: 12px; margin-top: 5px; display: block;">
+                    <i class="bi bi-box-arrow-up-right"></i> Click to view gallery
+                  </small>
+                </div>
+              </div>
+            </div>
+          </figure>
+
+          <figure class="gallery-item" data-category="campus">
+            <div class="image-container" onclick="window.location.href='awards-gallery.html'" style="cursor: pointer;">
+              <img src="assets/img/sports/5.jpg" alt="College Entrance" loading="lazy">
+              <div class="image-overlay">
+                <div class="overlay-content">
+                  <h3>Awards</h3>
+               <p>Achievement recognition</p>
+                  <small style="color: #ffd700; font-size: 12px; margin-top: 5px; display: block;">
+                    <i class="bi bi-box-arrow-up-right"></i> Click to view gallery
+                  </small>
+                </div>
+              </div>
+            </div>
+          </figure>
+
+          <figure class="gallery-item" data-category="campus">
+            <div class="image-container" onclick="window.location.href='culturals-gallery.html'" style="cursor: pointer;">
+              <img src="assets/img/Culturals/1.jpg" alt="College Library" loading="lazy">
+              <div class="image-overlay">
+                <div class="overlay-content">
+                  <h3>Culturals</h3>
+                  <p>Artistic and creative expression</p>
+                  <small style="color: #ffd700; font-size: 12px; margin-top: 5px; display: block;">
+                    <i class="bi bi-box-arrow-up-right"></i> Click to view gallery
+                  </small>
+                </div>
+              </div>
+            </div>
+          </figure>
+
+
+
+          <figure class="gallery-item" data-category="facilities">
+            <div class="image-container" onclick="window.location.href='sports-gallery.html'" style="cursor: pointer;">
+              <img src="assets/img/sports/10.jpg" alt="Modern Classroom" loading="lazy">
+              <div class="image-overlay">
+                <div class="overlay-content">
+                  <h3>Sports</h3>
+                  <p>Physical activity and competition</p>
+                  <small style="color: #ffd700; font-size: 12px; margin-top: 5px; display: block;">
+                    <i class="bi bi-box-arrow-up-right"></i> Click to view gallery
+                  </small>
+                </div>
+              </div>
+            </div>
+          </figure>
+
+        </div>
+
+        
+
+    <!-- Custom Gallery CSS -->
+    <style>
+      /* ===== CUSTOM GALLERY STYLES ===== */
+      /* This CSS can be extracted into a separate file */
+
+      .gallery-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      /* Gallery Categories */
+      .gallery-categories {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 40px;
+      }
+
+      .category-btn {
+        padding: 12px 24px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border: none;
+        border-radius: 25px;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+      }
+
+      .category-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+      }
+
+      .category-btn.active {
+        background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        box-shadow: 0 4px 15px rgba(245, 87, 108, 0.4);
+      }
+
+      /* Photo Gallery Grid */
+      .photo-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 30px;
+        padding: 20px 0;
+      }
+
+      /* Gallery Item Styles */
+      .gallery-item {
+        margin: 0;
+        padding: 0;
+        background: transparent;
+        border: none;
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeInUp 0.6s ease forwards;
+        transition: all 0.3s ease;
+      }
+
+      .gallery-item:nth-child(1) { animation-delay: 0.1s; }
+      .gallery-item:nth-child(2) { animation-delay: 0.2s; }
+      .gallery-item:nth-child(3) { animation-delay: 0.3s; }
+      .gallery-item:nth-child(4) { animation-delay: 0.4s; }
+      .gallery-item:nth-child(5) { animation-delay: 0.5s; }
+      .gallery-item:nth-child(6) { animation-delay: 0.6s; }
+      .gallery-item:nth-child(7) { animation-delay: 0.7s; }
+      .gallery-item:nth-child(8) { animation-delay: 0.8s; }
+      .gallery-item:nth-child(9) { animation-delay: 0.9s; }
+      .gallery-item:nth-child(10) { animation-delay: 1.0s; }
+      .gallery-item:nth-child(11) { animation-delay: 1.1s; }
+      .gallery-item:nth-child(12) { animation-delay: 1.2s; }
+      .gallery-item:nth-child(13) { animation-delay: 1.3s; }
+      .gallery-item:nth-child(14) { animation-delay: 1.4s; }
+      .gallery-item:nth-child(15) { animation-delay: 1.5s; }
+      .gallery-item:nth-child(16) { animation-delay: 1.6s; }
+
+      .gallery-item.hidden {
+        display: none;
+      }
+
+      /* Image Container */
+      .image-container {
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        transition: all 0.3s ease;
+        background: #fff;
+      }
+
+      .image-container:hover {
+        transform: scale(1.05);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+      }
+
+      /* Gallery Images */
+      .image-container img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        display: block;
+        transition: all 0.3s ease;
+      }
+
+      .image-container:hover img {
+        transform: scale(1.1);
+        filter: brightness(0.8);
+      }
+
+      /* Image Overlay */
+      .image-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 0.3) 50%,
+          rgba(0, 0, 0, 0.8) 100%
+        );
+        display: flex;
+        align-items: flex-end;
+        opacity: 0;
+        transition: all 0.3s ease;
+      }
+
+      .image-container:hover .image-overlay {
+        opacity: 1;
+      }
+
+      .overlay-content {
+        padding: 20px;
+        color: white;
+        transform: translateY(20px);
+        transition: all 0.3s ease;
+      }
+
+      .image-container:hover .overlay-content {
+        transform: translateY(0);
+      }
+
+      .overlay-content h3 {
+        margin: 0 0 8px 0;
+        font-size: 18px;
+        font-weight: 700;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        color: white;
+      }
+
+      .overlay-content p {
+        margin: 0;
+        font-size: 14px;
+        opacity: 0.9;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+      }
+
+      /* Load More Button */
+      .load-more-container {
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      .load-more-btn {
+        padding: 15px 40px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border: none;
+        border-radius: 30px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+      }
+
+      .load-more-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+      }
+
+      .load-more-btn:active {
+        transform: translateY(0);
+      }
+
+      /* Animations */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .gallery-container {
+          padding: 15px;
+        }
+
+        .gallery-categories {
+          gap: 8px;
+          margin-bottom: 30px;
+        }
+
+        .category-btn {
+          padding: 10px 20px;
+          font-size: 13px;
+        }
+
+        .photo-gallery {
+          grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+          gap: 20px;
+          padding: 15px 0;
+        }
+
+        .image-container img {
+          height: 220px;
+        }
+
+        .overlay-content {
+          padding: 15px;
+        }
+
+        .overlay-content h3 {
+          font-size: 16px;
+        }
+
+        .overlay-content p {
+          font-size: 13px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .gallery-categories {
+          gap: 6px;
+        }
+
+        .category-btn {
+          padding: 8px 16px;
+          font-size: 12px;
+        }
+
+        .photo-gallery {
+          grid-template-columns: 1fr;
+          gap: 15px;
+        }
+
+        .image-container img {
+          height: 250px;
+        }
+      }
+
+      /* Loading Animation */
+      .image-container img {
+        animation: imageLoad 1s ease-in-out;
+      }
+
+      @keyframes imageLoad {
+        0% {
+          opacity: 0;
+          transform: scale(0.9);
+        }
+        50% {
+          opacity: 0.7;
+          transform: scale(1.02);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      /* Filter Animation */
+      .gallery-item.filtering {
+        animation: filterAnimation 0.4s ease;
+      }
+
+      @keyframes filterAnimation {
+        0% {
+          opacity: 0.3;
+          transform: scale(0.9);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    </style>
+
+    <!-- Gallery JavaScript -->
+    <script>
+      // This JavaScript can be extracted into a separate file
+
+      document.addEventListener('DOMContentLoaded', function() {
+        const categoryButtons = document.querySelectorAll('.category-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const loadMoreBtn = document.getElementById('loadMoreBtn');
+        let itemsShown = 12; // Initially show 12 items
+        const totalItems = galleryItems.length;
+
+        // Initialize - hide items beyond initial limit
+        function initializeGallery() {
+          galleryItems.forEach((item, index) => {
+            if (index >= itemsShown) {
+              item.classList.add('hidden');
+            }
+          });
+
+          // Hide load more button if all items are shown
+          if (itemsShown >= totalItems) {
+            loadMoreBtn.style.display = 'none';
+          }
+        }
+
+        // Category Filter Functionality
+        categoryButtons.forEach(button => {
+          button.addEventListener('click', function() {
+            // Remove active class from all buttons
+            categoryButtons.forEach(btn => btn.classList.remove('active'));
+
+            // Add active class to clicked button
+            this.classList.add('active');
+
+            const selectedCategory = this.getAttribute('data-category');
+
+            // Filter gallery items
+            galleryItems.forEach(item => {
+              item.classList.remove('filtering');
+
+              // Force reflow
+              void item.offsetWidth;
+
+              if (selectedCategory === 'all') {
+                item.style.display = 'block';
+                setTimeout(() => {
+                  item.classList.add('filtering');
+                }, 10);
+              } else {
+                const itemCategory = item.getAttribute('data-category');
+                if (itemCategory === selectedCategory) {
+                  item.style.display = 'block';
+                  setTimeout(() => {
+                    item.classList.add('filtering');
+                  }, 10);
+                } else {
+                  item.style.display = 'none';
+                }
+              }
+            });
+          });
+        });
+
+        // Load More Functionality
+        loadMoreBtn.addEventListener('click', function() {
+          const currentlyHidden = document.querySelectorAll('.gallery-item.hidden');
+          const itemsToShow = Math.min(6, currentlyHidden.length); // Show 6 more items
+
+          for (let i = 0; i < itemsToShow; i++) {
+            const item = currentlyHidden[i];
+            item.classList.remove('hidden');
+            // Re-trigger animation
+            item.style.animation = 'none';
+            item.offsetHeight; // Force reflow
+            item.style.animation = '';
+          }
+
+          itemsShown += itemsToShow;
+
+          // Hide load more button if all items are shown
+          if (itemsShown >= totalItems) {
+            loadMoreBtn.style.display = 'none';
+          }
+
+          // Add loading animation
+          this.textContent = 'Loading...';
+          this.disabled = true;
+
+          setTimeout(() => {
+            this.textContent = 'Load More Photos';
+            this.disabled = false;
+          }, 500);
+        });
+
+        // Lazy Loading for Images
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const img = entry.target;
+              img.classList.add('loaded');
+              observer.unobserve(img);
+            }
+          });
+        }, {
+          threshold: 0.1
+        });
+
+        // Observe all images
+        document.querySelectorAll('.image-container img').forEach(img => {
+          imageObserver.observe(img);
+        });
+
+        // Initialize gallery
+        initializeGallery();
+
+        // Add smooth scroll behavior
+        document.querySelectorAll('.gallery-categories a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+              target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }
+          });
+        });
+      });
+    </script>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-3 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+        <img class="img-logo-footer" src="assets/img/logo-fpng.png" alt="College logo">
+          </a>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/people/Svcpscop-Svcpscop/pfbid02nfVP4a56Cpf5LmqiERoMRDQofsi7Wm2RR51t5fJjBngXSqF41u2JK6ZLCqtFhKRNl/?mibextid=rS40aB7S9Ucbxw6v"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/svco_pt_ot_/?igsh=ZmdsbmQ5MnBrOXll#"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/@svcps"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>QUICK LINKS</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html" style="font-weight: 600;">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>OUR FACILITIES</h4>
+          <ul>
+            <li><a href="#">Hostel</a></li>
+            <li><a href="#">Cafeteria</a></li>
+            <li><a href="#">Laboratory</a></li>
+            <li><a href="#">Libraries</a></li>
+            <li><a href="#">Transport</a></li>
+            <li><a href="#">Research Centre</a></li>
+          </ul>
+        </div>
+
+      <div class="col-lg-3 col-md-6 footer-about">
+           <h4>COLLEGE ADDRESS</h4>
+          <div class="footer-contact">
+            <p>Sri Kalaivani Nagar, Otthakkuthirai,</p>
+            <p>K.Mettupalayam (PO) - 638 455</p>
+            <p>Gobichettipalayam, Erode Dt, Tamil Nadu.</p>
+            <p class="mt-33" ><strong>Phone:</strong> <a href="tel:+91 9003686322">+91 9003686322</a></p>
+               <p class="mt-33"><strong>Phone:</strong> <a href="tel:+91 8122889988">+91 8122889988</a></p>
+            <p class="mt-33"><strong>Email:</strong> <a href="mailto:svcpsphysio@gmail.com">svcpsphysio@gmail.com</a></p>
+            <p class="mt-33"><strong>Email:</strong> <a href="mailto:physioedu@svcps.in">physioedu@svcps.in</a></p>
+            <p class="mt-33"><strong>Website:</strong>  <a href="www.svcps.in">www.svcps.in</a></p>
+          </div>
+          <style>
+            .mt-33{
+              font-family:Arial, Helvetica, sans-serif !important;
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright text-center mt-4">
+      <p>© 2024 <a href="https://diginexus.co.in" target="_blank" style="color: inherit; text-decoration: none;">Digi Nexus</a>. All rights reserved.</p>
+
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
