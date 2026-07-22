@@ -29,6 +29,238 @@
 
   <!-- Student Seminar Gallery CSS -->
   <style>
+
+  /* Navigation Bar Redesign - Modern & Compact */
+  
+  /* Header Height Reduction */
+  .header {
+    padding: 12px 0 !important;
+  }
+
+  /* Main Navigation Styling */
+  .navmenu ul {
+    display: flex;
+    gap: 8px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .navmenu ul li {
+    position: relative;
+  }
+
+  .navmenu ul li a {
+    display: inline-block;
+    padding: 8px 14px;
+    color: #333;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    position: relative;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+  }
+
+  /* Hover Effect - Underline animation */
+  .navmenu ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 2px;
+    left: 50%;
+    background: #2086b8;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+  }
+
+  .navmenu ul li a:hover {
+    color: #2086b8 !important;
+  }
+
+  .navmenu ul li a:hover::after {
+    width: 70%;
+  }
+
+  .navmenu ul li.active a {
+    color: #04415f !important;
+  }
+
+  .navmenu ul li.active a::after {
+    width: 70%;
+    background: #04415f;
+  }
+
+  /* Dropdown Styling */
+  .navmenu .dropdown > a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .navmenu .dropdown > a i {
+    transition: transform 0.3s ease;
+    font-size: 0.75rem;
+  }
+
+  .navmenu .dropdown:hover > a i {
+    transform: rotate(180deg);
+  }
+
+  .navmenu .dropdown ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    flex-direction: column;
+    gap: 0;
+    padding: 10px 0;
+    min-width: 200px;
+    border-radius: 6px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    margin-top: 8px;
+    list-style: none;
+    flex-wrap: nowrap;
+  }
+
+  .navmenu .dropdown:hover ul {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .navmenu .dropdown ul li a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    border-radius: 0;
+    background: transparent;
+  }
+
+  .navmenu .dropdown ul li a::after {
+    display: none;
+  }
+
+  .navmenu .dropdown ul li a:hover {
+    background: linear-gradient(90deg, rgba(32, 134, 184, 0.1), rgba(4, 65, 95, 0.05));
+    color: #04415f !important;
+    padding-left: 25px;
+  }
+
+  /* CTA Button Styling */
+  .nav-cta {
+    margin-left: 12px !important;
+  }
+
+  .contact-btn {
+    background: linear-gradient(135deg, #2086b8, #04415f) !important;
+    color: white !important;
+    padding: 10px 20px !important;
+    border-radius: 6px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 12px rgba(32, 134, 184, 0.3);
+    display: inline-block !important;
+  }
+
+  .contact-btn:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 18px rgba(32, 134, 184, 0.4) !important;
+  }
+
+  .contact-btn::after {
+    display: none !important;
+  }
+
+  /* Responsive Navigation */
+  @media (max-width: 1024px) {
+    .navmenu ul {
+      gap: 6px;
+    }
+
+    .navmenu ul li a {
+      padding: 6px 10px;
+      font-size: 0.9rem;
+    }
+
+    .navmenu .dropdown ul {
+      min-width: 180px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .navmenu {
+      position: static;
+    }
+
+    .navmenu ul {
+      flex-direction: column;
+      gap: 0;
+      background: white;
+      padding: 15px 0;
+      border-top: 1px solid #e0e0e0;
+    }
+
+    .navmenu ul li {
+      width: 100%;
+    }
+
+    .navmenu ul li a {
+      display: block;
+      padding: 10px 15px;
+      border-radius: 0;
+      font-size: 0.95rem;
+    }
+
+    .navmenu ul li a::after {
+      display: none;
+    }
+
+    .navmenu .dropdown ul {
+      position: static;
+      opacity: 1;
+      visibility: visible;
+      transform: none;
+      box-shadow: none;
+      background: #f9f9f9;
+      margin-top: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      padding: 0;
+    }
+
+    .navmenu .dropdown.active ul {
+      max-height: 500px;
+      padding: 10px 0;
+    }
+
+    .navmenu .dropdown ul li a {
+      padding-left: 30px;
+      font-size: 0.9rem;
+    }
+
+    .nav-cta {
+      margin-left: 0 !important;
+      width: 100%;
+    }
+
+    .contact-btn {
+      width: 100% !important;
+      text-align: center !important;
+      margin-top: 10px;
+    }
+  }
+
+
     body {
       font-family: 'Roboto', sans-serif;
       background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
@@ -187,42 +419,6 @@
       text-align: justify;
     }
 
-    /* Navigation Bar Hover Effects */
-    .navmenu ul li a {
-      position: relative;
-      transition: all 0.5s ease;
-    }
-
-    .navmenu ul li a::after {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 2px;
-      bottom: 5px;
-      left: 50%;
-      background: #04415f;
-      transition: all 0.5s ease;
-      transform: translateX(-50%);
-    }
-
-    .navmenu ul li a:hover {
-      color: #2086b8 !important;
-      transform: translateY(-2px);
-    }
-
-    .navmenu ul li a:hover::after {
-      width: 80%;
-    }
-
-    .navmenu ul li.active a {
-      color: #04415f !important;
-    }
-
-    .navmenu ul li.active a::after {
-      width: 80%;
-      background: #04415f;
-    }
-
     /* Responsive Design */
     @media (max-width: 768px) {
       .page-title {
@@ -300,31 +496,57 @@
         University, Chennai</span>
       </div>
     </div>
-      <nav id="navmenu" class="navmenu">
+            <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
 
+          <!-- About Dropdown -->
+          <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="about.html">Institution</a></li>
+              <li><a href="#recognitions">Recognitions</a></li>
+              <li><a href="#chairman">Chairman</a></li>
+              <li><a href="#secretary">Secretary</a></li>
+              <li><a href="#principal">Principal</a></li>
+            </ul>
+          </li>
+
+          <!-- Academics Dropdown -->
           <li class="dropdown"><a href="#"><span>Academics</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="academicsProgrammes.html">Programmes</a></li>
               <li><a href="clinicaltraining.html">Clinical Training</a></li>
             </ul>
           </li>
-           <li><a href="admissions.html">Admissions</a></li>
+
+          <!-- Primary Links -->
+          <li><a href="admissions.html">Admissions</a></li>
           <li><a href="courses.html">Courses</a></li>
-          <li><a href="facilities.html" >Facilities</a></li>
-          <li><a href=#>Alumni</a></li>
-          <li><a href="links.html">links</a></li>
-          <li><a href="news.html">News</a></li>  
-          <li><a href="infrastructure.html">Infrastructure</a></li>
-          <li><a href="gallery.html" class="active">Gallery</a></li>
-          <li><a href="research.html" >Research</a></li>
-          <li><a href="career.html" >Career</a></li>
-          <li><a href="contact.html" >Contact Us</a></li>
+
+          <!-- Campus Dropdown -->
+          <li class="dropdown"><a href="#"><span>Campus</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="facilities.html">Facilities</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </li>
+
+          <!-- More Dropdown -->
+          <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="research.html">Research</a></li>
+              <li><a href="career.html">Career</a></li>
+              <li><a href="links.html">Links</a></li>
+            </ul>
+          </li>
+
+          <!-- CTA Button -->
+          <li class="nav-cta"><a href="contact.html" class="contact-btn">Contact Us</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+      
 
     </div>
   </header>
