@@ -42,7 +42,21 @@
   
   /* Header Height Reduction */
   .header {
-    padding: 12px 0 !important;
+    padding: 8px 0 !important;
+  }
+
+  .header .header-container {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+  }
+
+  .logo-section .logo img {
+    max-height: 82px;
+    width: auto;
+  }
+
+  .logo-section .college-name {
+    line-height: 1.25;
   }
 
   /* Main Navigation Styling */
@@ -192,7 +206,7 @@
     .about-hero {
       background: linear-gradient(135deg, #2086b8, #04415f);
       color: white;
-      padding: 80px 0;
+      padding: 56px 0;
       position: relative;
       overflow: hidden;
     }
@@ -879,12 +893,29 @@
 
     /* Responsive Design */
     @media (max-width: 768px) {
+      .header {
+        padding: 6px 0 !important;
+      }
+
+      .header .header-container {
+        padding-top: 4px !important;
+        padding-bottom: 4px !important;
+      }
+
+      .logo-section .logo img {
+        max-height: 68px;
+      }
+
       .about-hero h2 {
         font-size: 2rem;
       }
 
       .about-hero p {
         font-size: 1rem;
+      }
+
+      .about-hero {
+        padding: 44px 0;
       }
 
       .section-title h2 {
@@ -909,7 +940,7 @@
 
     @media (max-width: 576px) {
       .about-hero {
-        padding: 60px 0;
+        padding: 36px 0;
       }
 
       .stats-grid {
@@ -1337,7 +1368,7 @@ color: #ffffff;
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.webp" alt=""> -->
-   <img src="assets/img/logo-fpng.png" alt="College logo" height="70" width="70" class="img-fluid">
+   <img src="assets/img/logo-fpng.png" alt="College logo"  >
       </a>
       <div class="college-name ms-3">
         <h2 class="cg-name" style="font-size: 18px;"> SHREE VENKATESHWARA</h2>

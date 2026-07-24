@@ -154,11 +154,11 @@ h6 {
   --heading-color: #ffffff;
   color: var(--default-color);
   background-color: white;
-  padding: 24px 0;
-  min-height: 165px;
-  transition: all 0.5s;
+  padding: 8px 0;
+  min-height: 80px;
+  transition: all 0.4s;
   z-index: 997;
-  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);
 
 }
 
@@ -169,30 +169,30 @@ h6 {
   --heading-color: #ffffff;
   color: var(--default-color);
   background-color: white;
-  padding: 24px 0;
-  min-height: 185px;
-  transition: all 0.5s;
+  padding: 10px 0;
+  min-height: 110px;
+  transition: all 0.4s;
   z-index: 997;
-  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);
 }
 }
 
 .header .header-container {
   background:white;
-  transition: all 0.5s;
+  transition: all 0.4s;
   position: relative;
   min-height: 0;
-  padding: 20px 20px;
+  padding: 8px 12px;
 }
 
 .header .logo img {
-  max-height: 88px;
+  max-height: 56px;
 }
 
 .header .logo h1 {
-  font-size: 26px;
+  font-size: 20px;
   margin: 0;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--contrast-color);
 }
 
@@ -209,19 +209,19 @@ h6 {
 
 .header .college-name {
   color: #0A1F2C;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 600;
-  line-height: 1.45;
+  line-height: 1.25;
   text-shadow: none;
-  margin-left: 5px !important;
-  padding: 8px 0;
+  margin-left: 6px !important;
+  padding: 4px 0;
 }
 
 .header .college-name .affiliation {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 400;
   opacity: 0.9;
-  margin-top: 8px;
+  margin-top: 4px;
   display: block;
 }
 
