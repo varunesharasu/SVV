@@ -186,15 +186,15 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 48px;
+  max-height: 88px;
   display: block;
   margin: 0;
 }
 
 .header .logo h1 {
-  font-size: 20px;
+  font-size: 26px;
   margin: 0;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--contrast-color);
 }
 
@@ -211,22 +211,19 @@ h6 {
 
 .header .college-name {
   color: #0A1F2C;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
-  line-height: 1.05;
+  line-height: 1.45;
   text-shadow: none;
-  margin-left: 4px !important;
-  padding: 2px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin-left: 5px !important;
+  padding: 8px 0;
 }
 
 .header .college-name .affiliation {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 400;
   opacity: 0.9;
-  margin-top: 2px;
+  margin-top: 8px;
   display: block;
 }
 
